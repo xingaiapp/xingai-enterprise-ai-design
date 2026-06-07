@@ -925,7 +925,7 @@ Generate Compliance Reports
 - Users follow through on suggestions
 - Improved health outcomes
 
-**[→ Try the demo at mealcoach.xingai.app](https://mealcoach.xingai.app)**
+**[→ Try the demo at meal.xingai.app](https://meal.xingai.app)**
 
 ---
 

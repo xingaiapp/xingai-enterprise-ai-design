@@ -422,7 +422,7 @@ flowchart TD
     style E fill:#99ccff
 ```
 
-**[→ 在 mealcoach.xingai.app 尝试演示](https://mealcoach.xingai.app)**
+**[→ 在 meal.xingai.app 尝试演示](https://meal.xingai.app)**
 
 ---
 
