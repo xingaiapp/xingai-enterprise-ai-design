@@ -389,6 +389,8 @@ flowchart TD
     style K fill:#9966ff
 ```
 
+**[→ 在 invest.xingai.app 尝试演示](https://invest.xingai.app)**
+
 ---
 
 ### 案例 2：XingAI Meal Coach
@@ -419,6 +421,8 @@ flowchart TD
     style B fill:#99ff99
     style E fill:#99ccff
 ```
+
+**[→ 在 mealcoach.xingai.app 尝试演示](https://mealcoach.xingai.app)**
 
 ---
 

@@ -900,6 +900,8 @@ Generate Compliance Reports
 - Can revert bad decisions
 - Can analyze recommendation quality
 
+**[→ Try the demo at invest.xingai.app](https://invest.xingai.app)**
+
 ---
 
 ### Case Study 2: Meal Coach at XingAI
@@ -922,6 +924,8 @@ Generate Compliance Reports
 - Personalized recommendations
 - Users follow through on suggestions
 - Improved health outcomes
+
+**[→ Try the demo at mealcoach.xingai.app](https://mealcoach.xingai.app)**
 
 ---
 
