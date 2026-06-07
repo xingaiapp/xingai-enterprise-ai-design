@@ -893,6 +893,35 @@ Generate Compliance Reports
 | Observability | Logs every recommendation and decision |
 | Governance | Audit trail for regulators, SEC compliance |
 
+**UX Flow:**
+
+```mermaid
+flowchart TD
+    A["📱 Investor Dashboard"] --> B["💬 Ask Question<br/>'Should I buy TSLA?'"] 
+    B --> C["🔍 AI Analyzes<br/>Stock trends, portfolio fit, risk"] 
+    C --> D{"🤖 AI Recommendation<br/>80% confidence<br/>Buy 10 shares"}
+    
+    D --> E["📊 Review Screen<br/>✅ Recommendation details<br/>✅ Reasoning explained<br/>✅ Risk assessment<br/>✅ Historical accuracy"]
+    
+    E --> F{"👤 Human Decision<br/>Investor confirms"}
+    
+    F -->|Approve| G["✅ Trade Executed<br/>Order sent to broker<br/>Portfolio updated"]
+    F -->|Reject| H["❌ Cancelled<br/>Save for later<br/>Ask different question"]
+    
+    G --> I["📈 Track Results<br/>Monitor trade performance<br/>Learn from outcome"]
+    H --> I
+    
+    style A fill:#ff9999
+    style B fill:#ffcccc
+    style C fill:#99ff99
+    style D fill:#ffff99
+    style E fill:#99ccff
+    style F fill:#ccffff
+    style G fill:#99ff99
+    style H fill:#ff9999
+    style I fill:#cc99ff
+```
+
 **Result:**
 - Investors confident in recommendations
 - SEC compliance for regulated activities
@@ -918,6 +947,43 @@ Generate Compliance Reports
 | Agent | Reasons about nutrition and user goals |
 | Observability | Tracks recommendation quality |
 | Governance | Privacy of food preferences, medical data |
+
+**UX Flow:**
+
+```mermaid
+flowchart TD
+    A["📱 Meal Coach App"] --> B["🎯 Onboarding<br/>Select preferences<br/>Dietary restrictions<br/>Health goals"]
+    
+    B --> C["💾 Build Profile<br/>Saves in memory<br/>Learns over time"]
+    
+    C --> D["🍽️ Ask Question<br/>'What should I eat<br/>for dinner tonight?'"]
+    
+    D --> E["🤖 AI Recommends<br/>3 meal options<br/>Personalized<br/>Recipes included"]
+    
+    E --> F["⭐ Review & Choose<br/>See full recipes<br/>Nutrition facts<br/>Prep time"]
+    
+    F --> G{"👍 User Feedback<br/>Rate recommendation<br/>Save favorite<br/>Skip if not interested"}
+    
+    G -->|Loved it| H["❤️ Learn Preference<br/>Remember in memory<br/>Recommend similar"] 
+    G -->|Not interested| I["📝 Learn Pattern<br/>Avoid similar items<br/>Next time better"]
+    
+    H --> J["📊 Next Time<br/>Better recommendations<br/>Based on history<br/>Personalized suggestions"]
+    I --> J
+    
+    J --> K["🔄 Continuous Loop<br/>Every meal improves AI<br/>Gets smarter over months"]
+    
+    style A fill:#ff9999
+    style B fill:#ffcccc
+    style C fill:#99ff99
+    style D fill:#ffff99
+    style E fill:#99ff99
+    style F fill:#99ccff
+    style G fill:#ccffff
+    style H fill:#99ff99
+    style I fill:#ffcccc
+    style J fill:#99ccff
+    style K fill:#cc99ff
+```
 
 **Result:**
 - 10x better user engagement

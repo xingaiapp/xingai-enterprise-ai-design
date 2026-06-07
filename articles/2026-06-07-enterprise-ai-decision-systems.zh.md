@@ -389,6 +389,35 @@ flowchart TD
     style K fill:#9966ff
 ```
 
+**用户体验流程：**
+
+```mermaid
+flowchart TD
+    A["📱 投资者仪表板"] --> B["💬 提问<br/>'应该买 TSLA 吗？'"] 
+    B --> C["🔍 AI 分析<br/>股票趋势、投资组合契合度、风险"] 
+    C --> D{"🤖 AI 推荐<br/>80% 信心<br/>买入 10 股"}
+    
+    D --> E["📊 审核屏幕<br/>✅ 推荐详情<br/>✅ 推理解释<br/>✅ 风险评估<br/>✅ 历史准确率"]
+    
+    E --> F{"👤 人工决策<br/>投资者确认"}
+    
+    F -->|批准| G["✅ 交易已执行<br/>订单已发送<br/>投资组合已更新"]
+    F -->|拒绝| H["❌ 已取消<br/>稍后再看<br/>询问其他问题"]
+    
+    G --> I["📈 跟踪结果<br/>监控交易表现<br/>从结果中学习"]
+    H --> I
+    
+    style A fill:#ff9999
+    style B fill:#ffcccc
+    style C fill:#99ff99
+    style D fill:#ffff99
+    style E fill:#99ccff
+    style F fill:#ccffff
+    style G fill:#99ff99
+    style H fill:#ff9999
+    style I fill:#cc99ff
+```
+
 **[→ 在 invest.xingai.app 尝试演示](https://invest.xingai.app)**
 
 ---
@@ -420,6 +449,43 @@ flowchart TD
     style A fill:#ff9999
     style B fill:#99ff99
     style E fill:#99ccff
+```
+
+**用户体验流程：**
+
+```mermaid
+flowchart TD
+    A["📱 Meal Coach 应用"] --> B["🥗 入门设置<br/>选择偏好<br/>饮食限制<br/>健康目标"]
+    
+    B --> C["💾 建立档案<br/>保存在记忆中<br/>随时间学习"]
+    
+    C --> D["🍽️ 提问<br/>'今晚吃什么？'"] 
+    
+    D --> E["🤖 AI 推荐<br/>3 个膳食选项<br/>个性化<br/>包含食谱"]
+    
+    E --> F["⭐ 查看并选择<br/>查看完整食谱<br/>营养事实<br/>准备时间"]
+    
+    F --> G{"👍 用户反馈<br/>评价推荐<br/>保存收藏<br/>如果不感兴趣则跳过"}
+    
+    G -->|很喜欢| H["❤️ 学习偏好<br/>记住在记忆中<br/>推荐相似项目"] 
+    G -->|不感兴趣| I["📝 学习模式<br/>避免相似项目<br/>下次更好"]
+    
+    H --> J["📊 下次推荐<br/>更好的推荐<br/>基于历史<br/>个性化建议"]
+    I --> J
+    
+    J --> K["🔄 持续循环<br/>每次膳食改进 AI<br/>数月内变得更聪明"]
+    
+    style A fill:#ff9999
+    style B fill:#ffcccc
+    style C fill:#99ff99
+    style D fill:#ffff99
+    style E fill:#99ff99
+    style F fill:#99ccff
+    style G fill:#ccffff
+    style H fill:#99ff99
+    style I fill:#ffcccc
+    style J fill:#99ccff
+    style K fill:#cc99ff
 ```
 
 **[→ 在 meal.xingai.app 尝试演示](https://meal.xingai.app)**
