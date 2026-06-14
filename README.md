@@ -10,6 +10,7 @@ A collection of architectural patterns, frameworks, and best practices for build
 
 | Date | Title | Audience | Tags |
 |------|-------|----------|------|
+| 2026-06-13 | [Orchestrator vs MCP Gateway: Why Enterprise AI Does Not Need an Orchestration MCP](articles/2026-06-13-orchestrator-vs-mcp-gateway.md) · [中文](articles/2026-06-13-orchestrator-vs-mcp-gateway.zh.md) | Enterprise Architects, AI Architects, Platform Engineers | `architecture` `enterprise` `mcp` `agent-orchestration` `tool-gateway` `governance` |
 | 2026-06-07 | [From AI Demos to Enterprise AI Decision Systems: Why LLM + RAG + MCP Is Not Enough](articles/2026-06-07-enterprise-ai-decision-systems.md) · [中文](articles/2026-06-07-enterprise-ai-decision-systems.zh.md) | Enterprise Architects, AI Architects, CTOs | `architecture` `enterprise` `ai-decision-systems` `design-patterns` `mcp` `event-bus` `human-in-the-loop` |
 
 ## What This Repository Is
@@ -69,12 +70,13 @@ This repository shares the architectural thinking that powers these systems.
 
 ## Key Articles Coming
 
+- ~~Multi-Agent Orchestration vs MCP Gateway~~ → [Published 2026-06-13](articles/2026-06-13-orchestrator-vs-mcp-gateway.md)
 - Event Bus Patterns in Enterprise AI
 - Memory Architectures for AI Agents
 - Human-in-the-Loop Decision Systems
 - Security & Governance in Enterprise AI
 - Cost Optimization at Scale
-- Multi-Agent Orchestration Patterns
+- Multi-Agent Orchestration Patterns → see [Orchestrator vs MCP Gateway](articles/2026-06-13-orchestrator-vs-mcp-gateway.md)
 
 ## Contributing
 

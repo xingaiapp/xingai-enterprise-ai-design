@@ -2,6 +2,20 @@
 
 这个文件包含了文章中所有核心概念的高分辨率架构图表。
 
+## Orchestrator vs MCP Gateway (UX)
+
+PNG diagram for dev teams — **no separate Orchestration MCP**:
+
+![Orchestrator vs MCP Gateway UX](./orchestrator-vs-mcp-gateway-ux.png)
+
+Used in:
+
+- [Orchestrator vs MCP Gateway (EN)](../articles/2026-06-13-orchestrator-vs-mcp-gateway.md)
+- [Orchestrator 与 MCP Gateway (中文)](../articles/2026-06-13-orchestrator-vs-mcp-gateway.zh.md)
+- [XingAI Enterprise Agent Platform (POC repo)](https://github.com/xingaiapp/xingai-enterprise-ai-pocs/blob/main/docs/ENTERPRISE-AGENT-PLATFORM.md)
+
+---
+
 ## 1. 企业 AI 决策系统完整架构
 
 ```mermaid
