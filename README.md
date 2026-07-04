@@ -10,6 +10,8 @@ A collection of architectural patterns, frameworks, and best practices for build
 
 | Date | Title | Audience | Tags |
 |------|-------|----------|------|
+| 2026-07-03 | [Beyond Prompt Engineering: Why Enterprise AI Is a Runtime Problem](articles/2026-07-03-beyond-prompt-engineering-loop-engineering.md) · [中文](articles/2026-07-03-beyond-prompt-engineering-loop-engineering.zh.md) | Enterprise Architects, AI Architects, CTOs, Platform Engineers | `architecture` `enterprise` `loop-engineering` `context-engineering` `harness-engineering` `agent-runtime` `governance` `ai-platform` |
+| 2026-07-03 | [From Prompt to Loop: AI-Native Architecture Evolution](articles/2026-07-03-prompt-to-loop-ai-native-architecture.md) · [中文](articles/2026-07-03-prompt-to-loop-ai-native-architecture.zh.md) | Enterprise Architects, AI Architects, CTOs | `architecture` `enterprise` `loop-engineering` `ai-native` `17-layer` `micro-loop-engine` `decision-os` |
 | 2026-06-13 | [Orchestrator vs MCP Gateway: Why Enterprise AI Does Not Need an Orchestration MCP](articles/2026-06-13-orchestrator-vs-mcp-gateway.md) · [中文](articles/2026-06-13-orchestrator-vs-mcp-gateway.zh.md) | Enterprise Architects, AI Architects, Platform Engineers | `architecture` `enterprise` `mcp` `agent-orchestration` `tool-gateway` `governance` |
 | 2026-06-07 | [From AI Demos to Enterprise AI Decision Systems: Why LLM + RAG + MCP Is Not Enough](articles/2026-06-07-enterprise-ai-decision-systems.md) · [中文](articles/2026-06-07-enterprise-ai-decision-systems.zh.md) | Enterprise Architects, AI Architects, CTOs | `architecture` `enterprise` `ai-decision-systems` `design-patterns` `mcp` `event-bus` `human-in-the-loop` |
 
@@ -71,6 +73,7 @@ This repository shares the architectural thinking that powers these systems.
 ## Key Articles Coming
 
 - ~~Multi-Agent Orchestration vs MCP Gateway~~ → [Published 2026-06-13](articles/2026-06-13-orchestrator-vs-mcp-gateway.md)
+- ~~Loop Engineering & AI-Native Platform Architecture~~ → [Published 2026-07-03](articles/2026-07-03-beyond-prompt-engineering-loop-engineering.md)
 - Event Bus Patterns in Enterprise AI
 - Memory Architectures for AI Agents
 - Human-in-the-Loop Decision Systems
@@ -102,4 +105,4 @@ Content is published under [CC BY 4.0](https://creativecommons.org/licenses/by/4
 
 **Author:** Xing Wang, AI Architect  
 **Brand:** XingAI  
-**Updated:** June 13, 2026
+**Updated:** July 3, 2026
