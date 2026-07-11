@@ -73,6 +73,8 @@ Two defaults are non-negotiable: **timeout resolves to deny**, and **gate unreac
 
 Asynchronous approval (fail now, retry after approval) sounds cleaner and is worse: the agent treats the failure as an error and improvises around it — exactly the behavior a governance layer must not provoke.
 
+A second implementation, [`xingai-robinhood-mcp` ADR-001](https://github.com/xingaiapp/xingai-robinhood-mcp/blob/main/docs/adr/001-mcp-gateway-proxy.md), moves the interception point itself: not a harness hook, but a local **MCP gateway proxy** the client connects to instead of the third-party MCP endpoint directly — necessary once a tool is used from several harnesses (Cursor, Claude Code, ChatGPT), none of which share a hook contract. It also sharpens the fail-closed discipline one level further: of Invest AI ADR-028's seven trade gates, three (human confirm, account-scope check, audit log) run as real code here; the other four are not stubbed to pass — each rejects by name ("G3 data freshness not wired") until the cross-repo dependency it needs actually exists. A governance layer that cannot yet enforce a gate must say so per-gate, not average it away into a checklist that looks complete.
+
 ### 4. Provenance plane — trust is a property of origin
 
 The 0din attack works because instructions from a just-cloned README carry the same weight as the user's typed request. Governance requires the opposite: instructions traceable to untrusted origins (fresh repos, fetched pages, inbound documents) raise the risk score of any action they trigger.
@@ -94,9 +96,9 @@ Every gated action writes one decision row: what was attempted, which rules fire
 |---|---|---|
 | Authority | firewall threat-model + gated-category config | Invest AI ADR-028 (G1–G7 trade gates), claims POC escalation thresholds |
 | Policy | YAML signal engine (deterministic) | fraud checks "rules first, LLM second" |
-| Approval | approval queue, timeout→deny, pin + suggestion (ADR-005) | trade confirm modals, Telegram confirm |
+| Approval | approval queue, timeout→deny, pin + suggestion (ADR-005) | trade confirm modals, Telegram confirm, Robinhood MCP gateway G1 (`xingai-robinhood-mcp` ADR-001) |
 | Provenance | turn-scoped session taint + baseline (ADR-004) | citation-grounded RAG (no uncited text reaches the adjudicator) |
-| Audit | Decision Ledger schema | audit_trail tables, decision snapshots |
+| Audit | Decision Ledger schema | audit_trail tables, decision snapshots, Robinhood MCP gateway G7 (`xingai-robinhood-mcp` ADR-001) |
 
 The pattern is codified as `agent-execution-gate` in the XingAI engineering system, with a per-product adoption checklist — a new execution surface adopts by writing a one-page ADR mapping the five planes onto itself.
 

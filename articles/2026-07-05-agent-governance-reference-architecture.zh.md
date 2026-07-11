@@ -71,6 +71,8 @@ allow/deny 由确定性规则产生：具名加权信号、配置化阈值、相
 
 异步审批（先失败、批准后重试）听起来更干净，实际更糟：Agent 会把失败当错误并即兴绕路——这恰恰是治理层最不能诱发的行为。
 
+第二个实现，[`xingai-robinhood-mcp` ADR-001](https://github.com/xingaiapp/xingai-robinhood-mcp/blob/main/docs/adr/001-mcp-gateway-proxy.zh.md)，把拦截点本身挪了位置：不是 harness hook，而是客户端连接的一个本地 **MCP 网关代理**，代替直连第三方 MCP 端点——一旦某个工具要从好几个 harness（Cursor、Claude Code、ChatGPT）里用，这一步就是必须的，因为它们没有共享的 hook 契约。它还把 fail-closed 的纪律又收紧了一层：Invest AI ADR-028 的七道交易门禁里，三道（人工确认、账户范围检查、审计日志）在这里是真代码；另外四道没有被桩成"通过"——每一道都点名拒绝（"G3 数据新鲜度未接入"），直到它需要的跨仓库依赖真正存在为止。一个还没能力强制某道门禁的治理层，必须逐门声明，而不是把它平均掉、伪装成一份完整的清单。
+
 ### 4. 溯源平面 —— 信任是来源的属性
 
 0din 攻击成立，是因为刚 clone 的 README 里的指令和用户亲手输入的请求权重相同。治理要求相反：可溯源到不可信来源（新仓库、抓取页面、外来文档）的指令，会提高其触发的任何动作的风险分。
@@ -92,9 +94,9 @@ allow/deny 由确定性规则产生：具名加权信号、配置化阈值、相
 |---|---|---|
 | 授权 | 防火墙威胁模型 + 受管控类别配置 | Invest AI ADR-028（G1–G7 交易门禁）、理赔 POC 升级阈值 |
 | 策略 | YAML 信号引擎（确定性） | 欺诈检查"规则优先、LLM 其次" |
-| 审批 | 审批队列、超时即拒绝、pin + 建议（ADR-005） | 交易确认弹窗、Telegram 确认 |
+| 审批 | 审批队列、超时即拒绝、pin + 建议（ADR-005） | 交易确认弹窗、Telegram 确认、Robinhood MCP 网关 G1（`xingai-robinhood-mcp` ADR-001） |
 | 溯源 | 按轮次 session 污染 + 基线（ADR-004） | 引用锚定 RAG（无引用文本到不了裁定者面前） |
-| 审计 | Decision Ledger schema | audit_trail 表、决策快照 |
+| 审计 | Decision Ledger schema | audit_trail 表、决策快照、Robinhood MCP 网关 G7（`xingai-robinhood-mcp` ADR-001） |
 
 该模式已在 XingAI 工程体系中固化为 `agent-execution-gate`，附按产品的采用 checklist——新执行面的采用方式是写一页 ADR，把五个平面映射到自己身上。
 
