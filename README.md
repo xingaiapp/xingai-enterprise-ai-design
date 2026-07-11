@@ -10,6 +10,7 @@ A collection of architectural patterns, frameworks, and best practices for build
 
 | Date | Title | Audience | Tags |
 |------|-------|----------|------|
+| 2026-07-11 | [How MCP Works in Production: A Deep Dive from Robinhood Trading MCP](articles/2026-07-11-mcp-in-production-robinhood-case.md) · [中文](articles/2026-07-11-mcp-in-production-robinhood-case.zh.md) | Enterprise Architects, AI Architects, Platform Engineers, Security | `architecture` `enterprise` `mcp` `oauth` `agents` `tool-gateway` `governance` `broker-integration` `human-in-the-loop` |
 | 2026-07-05 | [Agent Governance Reference Architecture: Authority, Provenance, Approval, Audit](articles/2026-07-05-agent-governance-reference-architecture.md) · [中文](articles/2026-07-05-agent-governance-reference-architecture.zh.md) | Enterprise Architects, Security Architects, AI Architects, Platform Engineers | `architecture` `enterprise` `agent-security` `governance` `human-in-the-loop` `prompt-injection` `audit` `policy-engine` |
 | 2026-07-04 | [Executable Knowledge: Why Quality Increases Velocity in AI-Native Engineering](articles/2026-07-04-executable-knowledge-quality-velocity.md) · [中文](articles/2026-07-04-executable-knowledge-quality-velocity.zh.md) | Enterprise Architects, Engineering Managers, AI Architects, CTOs | `ai-native-engineering` `executable-knowledge` `claude-md` `skills` `mcp` `quality` `velocity` `knowledge-infrastructure` |
 | 2026-07-03 | [Beyond Prompt Engineering: Why Enterprise AI Is a Runtime Problem](articles/2026-07-03-beyond-prompt-engineering-loop-engineering.md) · [中文](articles/2026-07-03-beyond-prompt-engineering-loop-engineering.zh.md) | Enterprise Architects, AI Architects, CTOs, Platform Engineers | `architecture` `enterprise` `loop-engineering` `context-engineering` `harness-engineering` `agent-runtime` `governance` `ai-platform` |
@@ -76,6 +77,7 @@ This repository shares the architectural thinking that powers these systems.
 
 - ~~Multi-Agent Orchestration vs MCP Gateway~~ → [Published 2026-06-13](articles/2026-06-13-orchestrator-vs-mcp-gateway.md)
 - ~~Loop Engineering & AI-Native Platform Architecture~~ → [Published 2026-07-03](articles/2026-07-03-beyond-prompt-engineering-loop-engineering.md)
+- ~~MCP in Production (Robinhood case)~~ → [Published 2026-07-11](articles/2026-07-11-mcp-in-production-robinhood-case.md)
 - Event Bus Patterns in Enterprise AI
 - Memory Architectures for AI Agents
 - Human-in-the-Loop Decision Systems
