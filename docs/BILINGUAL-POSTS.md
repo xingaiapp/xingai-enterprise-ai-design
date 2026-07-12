@@ -100,16 +100,20 @@ description: Brief description for SEO
 
 ## 文件放置
 
-所有文章存放在 `articles/` 目录：
+架构文章存放在 `articles/` 目录；教育指南存放在 `guides/` 目录：
 
 ```
 articles/
 ├── 2026-06-07-enterprise-ai-decision-systems.md
-├── 2026-06-07-enterprise-ai-decision-systems.zh.md
-├── 2026-06-08-event-bus-patterns.md
-└── 2026-06-08-event-bus-patterns.zh.md
+└── 2026-06-07-enterprise-ai-decision-systems.zh.md
+
+guides/
+├── README.md
+├── 2026-07-12-mcp-oauth-auth-deep-dive.md
+└── 2026-07-12-mcp-oauth-auth-deep-dive.zh.md
 ```
 
+两种目录都遵守同一双语命名：`YYYY-MM-DD-slug.md` + `YYYY-MM-DD-slug.zh.md`。
 ## Markdown 最佳实践
 
 ### 代码块

@@ -372,6 +372,15 @@ By the end of the same day, two more gates were real: **G3** ([ADR-002](https://
 
 ---
 
+## Learn the auth protocol next
+
+Architecture above assumes OAuth already worked. For a beginner-to-industry walkthrough of discovery, PKCE, JWT verification, scopes, and review→execute — plus a build-from-scratch lab — see:
+
+- [MCP Auth from Robinhood (concepts)](../guides/2026-07-12-mcp-oauth-auth-deep-dive.md)
+- [OAuth 2.1 + PKCE MCP lab](../guides/2026-07-12-mcp-oauth-pkce-lab.md)
+
+---
+
 ## Summary
 
 MCP in production is not "paste a URL." In the Robinhood + Cursor case it is:

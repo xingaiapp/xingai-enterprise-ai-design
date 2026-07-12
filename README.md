@@ -6,6 +6,15 @@ A collection of architectural patterns, frameworks, and best practices for build
 
 **Bilingual posts:** Each article is **English** (`.md`) + **中文** (`.zh.md`)
 
+## Education Guides
+
+Hands-on learning tracks (concepts + labs). Index: [`guides/README.md`](guides/README.md).
+
+| Date | Title | Audience | Tags |
+|------|-------|----------|------|
+| 2026-07-12 | [MCP Auth from Robinhood — OAuth 2.1 / PKCE / Token Verification](guides/2026-07-12-mcp-oauth-auth-deep-dive.md) · [中文](guides/2026-07-12-mcp-oauth-auth-deep-dive.zh.md) | Engineers learning MCP auth | `mcp` `oauth` `pkce` `jwt` `education` |
+| 2026-07-12 | [Build an OAuth 2.1 + PKCE MCP Project from Scratch](guides/2026-07-12-mcp-oauth-pkce-lab.md) · [中文](guides/2026-07-12-mcp-oauth-pkce-lab.zh.md) | Engineers implementing a demo Auth + MCP stack | `mcp` `oauth` `fastapi` `hands-on` `education` |
+
 ## Articles
 
 | Date | Title | Audience | Tags |
@@ -30,10 +39,12 @@ A **professional technical resource** for:
 
 ## What This Repository Is NOT
 
-- A tutorial for beginners
-- A marketing blog
+- A marketing blog or sales pitch
 - Academic research papers
-- Technology sales pitch
+- A substitute for official MCP / OAuth RFCs or vendor docs
+- Investment advice
+
+Education guides under [`guides/`](guides/) teach protocol mechanics with labs; architecture articles under [`articles/`](articles/) stay aimed at enterprise decision-makers.
 
 ## Core Concepts
 
@@ -78,6 +89,7 @@ This repository shares the architectural thinking that powers these systems.
 - ~~Multi-Agent Orchestration vs MCP Gateway~~ → [Published 2026-06-13](articles/2026-06-13-orchestrator-vs-mcp-gateway.md)
 - ~~Loop Engineering & AI-Native Platform Architecture~~ → [Published 2026-07-03](articles/2026-07-03-beyond-prompt-engineering-loop-engineering.md)
 - ~~MCP in Production (Robinhood case)~~ → [Published 2026-07-11](articles/2026-07-11-mcp-in-production-robinhood-case.md)
+- ~~MCP OAuth / PKCE education guides~~ → [Published 2026-07-12](guides/README.md)
 - Event Bus Patterns in Enterprise AI
 - Memory Architectures for AI Agents
 - Human-in-the-Loop Decision Systems
@@ -109,4 +121,4 @@ Content is published under [CC BY 4.0](https://creativecommons.org/licenses/by/4
 
 **Author:** Xing Wang, AI Architect  
 **Brand:** XingAI  
-**Updated:** July 3, 2026
+**Updated:** July 12, 2026

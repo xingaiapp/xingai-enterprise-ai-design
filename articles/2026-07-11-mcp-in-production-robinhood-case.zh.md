@@ -374,6 +374,15 @@ Robinhood MCP 今天是路径 1，路径 2 的门控写清楚，免得 Invest AI
 
 ---
 
+## 接下来学认证协议
+
+上面假设 OAuth 已经跑通。若要从零吃透发现、PKCE、JWT、Scope、Review→Execute，并动手搭一套实验环境，见：
+
+- [从 Robinhood MCP 看懂 MCP 认证（概念）](../guides/2026-07-12-mcp-oauth-auth-deep-dive.zh.md)
+- [从零搭建 OAuth 2.1 + PKCE MCP 项目](../guides/2026-07-12-mcp-oauth-pkce-lab.zh.md)
+
+---
+
 ## 小结
 
 生产里的 MCP 不是「贴个 URL」。在 Robinhood + Cursor 案例中，它是：
