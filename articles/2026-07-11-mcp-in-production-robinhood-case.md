@@ -18,6 +18,8 @@ This article is a **deep, real-case** walkthrough of Model Context Protocol usin
 
 **Companion docs (implementation):** [xingai-robinhood-mcp](https://github.com/xingaiapp/xingai-robinhood-mcp) · Invest AI [ADR-028](https://github.com/xingaiapp/xingai-invest-ai/blob/main/docs/adr/028-robinhood-mcp-execution-gates.md) · [OAuth troubleshooting](https://github.com/xingaiapp/xingai-robinhood-mcp/blob/main/docs/robinhood-mcp-oauth-troubleshooting.md)
 
+**Education guides (auth + lab):** [MCP Auth deep dive — OAuth 2.1 / PKCE / JWT](../guides/2026-07-12-mcp-oauth-auth-deep-dive.md) · [Build OAuth 2.1 + PKCE MCP from scratch](../guides/2026-07-12-mcp-oauth-pkce-lab.md) · [中文](../guides/README.md)
+
 ---
 
 ## 5W Framework

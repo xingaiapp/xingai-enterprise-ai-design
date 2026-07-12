@@ -18,6 +18,8 @@ description: MCP 演示看起来像「贴个 URL 就能调工具」。生产里�
 
 **实现侧配套：** [xingai-robinhood-mcp](https://github.com/xingaiapp/xingai-robinhood-mcp) · Invest AI [ADR-028](https://github.com/xingaiapp/xingai-invest-ai/blob/main/docs/adr/028-robinhood-mcp-execution-gates.zh.md) · [OAuth 排障](https://github.com/xingaiapp/xingai-robinhood-mcp/blob/main/docs/robinhood-mcp-oauth-troubleshooting.zh.md)
 
+**新手教程（认证 + 动手实验）：** [从 Robinhood MCP 看懂 MCP 认证](../guides/2026-07-12-mcp-oauth-auth-deep-dive.zh.md) · [从零搭建 OAuth 2.1 + PKCE MCP 项目](../guides/2026-07-12-mcp-oauth-pkce-lab.zh.md) · [Education Guides 索引](../guides/README.md)
+
 **英文版：** [English](2026-07-11-mcp-in-production-robinhood-case.md)
 
 ---
