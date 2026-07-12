@@ -311,9 +311,9 @@ Related: [Agent Governance Reference Architecture](2026-07-05-agent-governance-r
 | Domain MCP | Robinhood hosted Trading MCP | GitHub / Jira / SAP / internal Claims MCP |
 | Host | Cursor | IDE, Teams bot, internal agent runtime |
 | Bridge / adapter | `mcp-remote` | Sidecar that fixes OAuth + transport |
-| Gateway | Not used (single MCP) | Required when N MCPs + central policy |
+| Gateway | Shipped same day as this article, see update below — a local proxy in front of `mcp-remote`, enforcing gates in code | Required when N MCPs + central policy, **or** — this case's actual reason — when the write-tool blast radius alone justifies code enforcement even for one MCP |
 | Orchestrator | Not used (single agent chat) | Multi-agent planning *above* tools |
-| Product gates | ADR-028 G1–G7 | Per-domain execution gates + Decision Ledger |
+| Product gates | ADR-028 G1–G7 — three of seven now run as code in the gateway (G1/G6/G7), two more wired same day (G2/G3); see update below | Per-domain execution gates + Decision Ledger |
 
 **Do not** build an "Orchestration MCP" to replace the orchestrator ([prior article](2026-06-13-orchestrator-vs-mcp-gateway.md)). **Do** expect a bridge when consuming third-party hosted MCPs from mainstream hosts.
 
@@ -355,6 +355,20 @@ If any box is blank, the integration is still a demo.
 | Place fails on default account | Server authz | Writable subset ≠ all accounts from `get_accounts` |
 | Works in Claude, fails in Cursor | Host matrix | Same MCP URL ≠ same OAuth client |
 | Token folder churn after upgrade | Bridge versioning | Pin `mcp-remote` (or sidecar) versions |
+
+---
+
+## Update (later the same day): the gateway this article said wasn't needed
+
+Section 7's table above originally read "Gateway: Not used (single MCP)." That was true for the topology this article documents — direct `Cursor → mcp-remote → Robinhood` — and it changed the same day, which is worth walking through, because the reasoning is the more useful artifact than the correction itself.
+
+Section 6 already named the gap: "MCP can *encourage* [the review-before-place discipline] in tool descriptions. It cannot *force* a hostile or confused model." Section 8's checklist even asked the right question — *"If we add a second MCP tomorrow, do we need a gateway already?"* — but framed the gateway as a multi-MCP concern. The actual trigger turned out narrower: **one MCP, with a write-tool blast radius large enough that prompt-level discipline (`common-prompts.md` asking the agent to `review_*` before `place_*`) wasn't a gate, it was a request.**
+
+[`xingai-robinhood-mcp` ADR-001](https://github.com/xingaiapp/xingai-robinhood-mcp/blob/main/docs/adr/001-mcp-gateway-proxy.md) shipped a local MCP gateway proxy: clients connect to it instead of `agent.robinhood.com` directly. Reads pass straight through. Writes (`place_*`/`cancel_*`) are evaluated against ADR-028's seven gates before forwarding — three self-contained enough to build without touching another repo (**G1** human confirm via a pending-approval queue, **G6** agentic-account-only checked against the upstream's own flag, **G7** one audit-ledger row per write attempt, written before the forwarding decision). The other four reject by name and fail closed — `"G3 data freshness not wired — fail-closed"` — rather than silently passing. **No write order could succeed through the gateway that morning, by construction**, which is the correct default for a tool sitting in front of a real brokerage account, not a partial rollout bug.
+
+By the end of the same day, two more gates were real: **G3** ([ADR-002](https://github.com/xingaiapp/xingai-robinhood-mcp/blob/main/docs/adr/002-g3-data-freshness-wired.md)) and **G2** ([ADR-003](https://github.com/xingaiapp/xingai-robinhood-mcp/blob/main/docs/adr/003-g2-step-up-wired-single-user.md), deliberately scoped to reuse Invest AI's existing single-admin OTP flow rather than build general per-user step-up auth for a gateway with exactly one operator). G4/G5 remain fail-closed — no trade can still succeed — but two of the four "needs another repo's infrastructure" gates turned out to need only wiring, since Invest AI had already shipped the underlying endpoints before this article's topology diagram was drawn.
+
+**The corrected generalization:** don't reach for "gateway" only at N-MCP central-policy scale. Reach for it whenever the answer to "can a description in `tools/list` actually stop a write?" is no, and the write is expensive enough that a request isn't a good enough gate. That can be true at N=1.
 
 ---
 

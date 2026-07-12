@@ -313,9 +313,9 @@ MCP 可以在工具描述里*鼓励*（「调用前务必与用户确认」）�
 | Domain MCP | Robinhood 托管 Trading MCP | GitHub / Jira / SAP / 内部理赔 MCP |
 | Host | Cursor | IDE、Teams Bot、内部 Agent 运行时 |
 | Bridge / 适配器 | `mcp-remote` | 修 OAuth + 传输的 Sidecar |
-| Gateway | 未用（单个 MCP） | N 个 MCP + 中央策略时必需 |
+| Gateway | 跟本文同一天上线了，见下面的更新——一个挡在 `mcp-remote` 前面的本地代理，代码强制门禁 | N 个 MCP + 中央策略时必需，**或者**——本案例真正的原因——写工具的爆炸半径本身就足以让你为单个 MCP 做代码强制 |
 | Orchestrator | 未用（单 Agent 对话） | 工具之上的多 Agent 规划 |
-| 产品门控 | ADR-028 G1–G7 | 领域执行门控 + Decision Ledger |
+| 产品门控 | ADR-028 G1–G7——七道里三道（G1/G6/G7）已经在网关里跑成真代码，同一天又接通两道（G2/G3），见下面的更新 | 领域执行门控 + Decision Ledger |
 
 **不要**用「Orchestration MCP」取代编排器（[前文](2026-06-13-orchestrator-vs-mcp-gateway.zh.md)）。**要**预期：用主流 Host 吃第三方托管 MCP 时会出现桥。
 
@@ -357,6 +357,20 @@ Robinhood MCP 今天是路径 1，路径 2 的门控写清楚，免得 Invest AI
 | 默认账户 place 失败 | Server 鉴权 | 可写子集 ≠ `get_accounts` 的全部账户 |
 | Claude 能通、Cursor 不通 | Host 矩阵 | 同一 MCP URL ≠ 同一 OAuth client |
 | 升级后 Token 目录漂移 | Bridge 版本 | 钉死 `mcp-remote`（或 sidecar）版本 |
+
+---
+
+## 更新（同一天晚些时候）：本文说"不需要"的那个 Gateway
+
+上面第 7 节的表格原文写的是"Gateway：未用（单个 MCP）"。这对本文记录的这套拓扑——直连 `Cursor → mcp-remote → Robinhood`——在当时是对的，结果同一天就变了。这个变化本身不重要，重要的是背后的推理，值得走一遍。
+
+第 6 节其实已经点出了缺口："MCP 可以在工具描述里**鼓励**（先 review 再 place 的规矩），但**强制不了**一个失控或困惑的模型。" 第 8 节的清单甚至问对了问题——"明天再加第二个 MCP，是否已经需要 Gateway？"——但把 Gateway 框成了"多 MCP 才要考虑"的事。实际触发条件比这个窄："单个 MCP，但写工具的爆炸半径大到——提示词层面的自律（`common-prompts.md` 让 Agent 下单前先 `review_*`）根本不是门禁，只是个请求。"
+
+[`xingai-robinhood-mcp` ADR-001](https://github.com/xingaiapp/xingai-robinhood-mcp/blob/main/docs/adr/001-mcp-gateway-proxy.zh.md) 上线了一个本地 MCP 网关代理：客户端连它，不再直连 `agent.robinhood.com`。读操作直接透传。写操作（`place_*`/`cancel_*`）转发前要过 ADR-028 的七道门——三道自成一体、不用碰别的仓库就能做（**G1** 人工确认，走待审批队列；**G6** 仅 Agentic 账户，核对上游自己标的 flag；**G7** 审计台账，每次写操作一行，在转发决策**之前**写）。另外四道点名拒绝并 fail-closed——`"G3 data freshness not wired — fail-closed"`——而不是悄悄放行。**那天早上，通过网关没有任何写单能成功**，这是设计如此，对一个挡在真实券商账户前面的工具来说是正确的默认状态，不是半成品 bug。
+
+到同一天结束前，又有两道门变成真的了：**G3**（[ADR-002](https://github.com/xingaiapp/xingai-robinhood-mcp/blob/main/docs/adr/002-g3-data-freshness-wired.zh.md)）和 **G2**（[ADR-003](https://github.com/xingaiapp/xingai-robinhood-mcp/blob/main/docs/adr/003-g2-step-up-wired-single-user.zh.md)，刻意限定为复用 Invest AI 现成的单管理员 OTP 流程，没有为一个只有一个操作者的网关去搭通用的按用户 step-up 认证）。G4/G5 依然 fail-closed——依然没有交易能成功——但四道"需要另一个仓库基础设施"的门里，有两道其实只需要接线，因为 Invest AI 在这篇文章画拓扑图之前就已经上线了底层端点。
+
+**修正后的一般化结论：** 不要只在"N 个 MCP、需要中央策略"的规模才想到 Gateway。只要"`tools/list` 里的一句描述真的能拦住一次写操作吗"这个问题的答案是否，而这次写操作又贵到"请求"不足以当门禁——就该上 Gateway。这个条件在 N=1 时也可能成立。
 
 ---
 
