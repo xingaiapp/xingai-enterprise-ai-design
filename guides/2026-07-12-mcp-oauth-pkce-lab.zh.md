@@ -11,7 +11,7 @@ description: 动手搭建 Authorization Server + MCP Server + Python Client：�
 **English:** [2026-07-12-mcp-oauth-pkce-lab.md](2026-07-12-mcp-oauth-pkce-lab.md)  
 **概念篇（先读）：** [从 Robinhood MCP 看懂 MCP 认证](2026-07-12-mcp-oauth-auth-deep-dive.zh.md)  
 **架构参考：** [MCP 在生产中的实践](../articles/2026-07-11-mcp-in-production-robinhood-case.zh.md)  
-**实现仓库：** [xingai-robinhood-mcp](https://github.com/xingaiapp/xingai-robinhood-mcp)
+**实现仓库：** [xingai-robinhood-mcp](https://github.com/xingaiapp/xingai-robinhood-mcp)（券商领域）· **可运行 POC：** [claims-mcp-oauth-poc](https://github.com/xingaiapp/xingai-enterprise-ai-pocs/tree/main/pocs/claims-mcp-oauth-poc)（保险理赔领域——这篇实验课代码的移植版）
 
 > **重要声明：** 本实验为教学用**模拟系统**，不接真实券商，不构成投资建议，不属于生产就绪代码。代码按「现状」提供，用户自行负责评估、部署与合规。
 
@@ -3729,7 +3729,7 @@ JWKS 拉取（冷启动）：约 50ms
 
 **下一步**：
 
-1. 把代码提交到 [xingai-enterprise-ai-pocs](https://github.com/xingaiapp/xingai-enterprise-ai-pocs) 的独立 POC 目录
+1. ~~把代码提交到 xingai-enterprise-ai-pocs 的独立 POC 目录~~ **已完成，2026-07-12** —— 见 [理赔 MCP OAuth POC](https://github.com/xingaiapp/xingai-enterprise-ai-pocs/tree/main/pocs/claims-mcp-oauth-poc)。同一套代码，换成保险理赔裁定领域——证明这套模式不是 Robinhood 专属的。
 2. 参考[生产拓扑](../articles/2026-07-11-mcp-in-production-robinhood-case.zh.md)理解 Worker / FastAPI / Redis 的决策边界
 3. 阅读 [Invest AI ADR-028](https://github.com/xingaiapp/xingai-invest-ai/blob/main/docs/adr/028-robinhood-mcp-execution-gates.zh.md) 了解真实产品如何实现 Review Gate
 4. 向同事展示这个 Demo，解释为什么「Authorization Code 一次性」和「PKCE」同时都是必要的
@@ -3743,7 +3743,8 @@ OAuth 授权 Agent 可以访问服务，不等于用户授权 Agent 执行每一
 - **English 版本：** [2026-07-12-mcp-oauth-pkce-lab.md](2026-07-12-mcp-oauth-pkce-lab.md)
 - **概念篇：** [MCP 认证深潜](2026-07-12-mcp-oauth-auth-deep-dive.zh.md)
 - **生产拓扑：** [Robinhood MCP 深潜](../articles/2026-07-11-mcp-in-production-robinhood-case.zh.md)
-- **实现仓库：** [xingai-robinhood-mcp](https://github.com/xingaiapp/xingai-robinhood-mcp)
+- **实现仓库（券商领域）：** [xingai-robinhood-mcp](https://github.com/xingaiapp/xingai-robinhood-mcp)
+- **可运行 POC（理赔领域）：** [claims-mcp-oauth-poc](https://github.com/xingaiapp/xingai-enterprise-ai-pocs/tree/main/pocs/claims-mcp-oauth-poc)——这篇实验课的代码搬过去的版本，另附一份对着同一套代码逐个讲解 OAuth/PKCE 机制的深度文档
 - **Invest AI 门控：** [ADR-028](https://github.com/xingaiapp/xingai-invest-ai/blob/main/docs/adr/028-robinhood-mcp-execution-gates.zh.md)
 
 ---

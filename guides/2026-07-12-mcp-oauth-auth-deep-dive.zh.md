@@ -1426,6 +1426,10 @@ app = Starlette(routes=[
 
 → [从零搭建 OAuth 2.1 + PKCE MCP 项目](2026-07-12-mcp-oauth-pkce-lab.zh.md)
 
+看同一套模式搬出券商领域、用在保险理赔裁定上的可运行 POC，用理赔权限策略层代替名义金额上限：
+
+→ [理赔 MCP OAuth POC](https://github.com/xingaiapp/xingai-enterprise-ai-pocs/tree/main/pocs/claims-mcp-oauth-poc)——自带一份 `docs/mcp-auth-deep-dive.zh.md`，把这篇文章的每个概念都对应到真实的理赔领域代码上
+
 生产拓扑与 gateway fail-closed：
 
 → [生产环境里 MCP 如何真正运转](../articles/2026-07-11-mcp-in-production-robinhood-case.zh.md)

@@ -11,7 +11,7 @@ description: Hands-on lab — build an Authorization Server, MCP Server, and Pyt
 **中文版：** [2026-07-12-mcp-oauth-pkce-lab.zh.md](2026-07-12-mcp-oauth-pkce-lab.zh.md)  
 **Concepts first (read this before the lab):** [MCP Auth — The Robinhood Deep Dive](2026-07-12-mcp-oauth-auth-deep-dive.md)  
 **Architecture reference:** [MCP in Production](../articles/2026-07-11-mcp-in-production-robinhood-case.md)  
-**Implementation repo:** [xingai-robinhood-mcp](https://github.com/xingaiapp/xingai-robinhood-mcp)
+**Implementation repo:** [xingai-robinhood-mcp](https://github.com/xingaiapp/xingai-robinhood-mcp) (brokerage) · **Runnable POC:** [claims-mcp-oauth-poc](https://github.com/xingaiapp/xingai-enterprise-ai-pocs/tree/main/pocs/claims-mcp-oauth-poc) (insurance claims — this lab's code, ported)
 
 > **Important:** This lab is a **simulated teaching system**. It does not connect to any real broker, does not constitute investment advice, and is not production-ready code. All code is provided "as is". You are responsible for evaluating, deploying, and ensuring compliance with any applicable regulations before using it in any real context.
 
@@ -3717,7 +3717,7 @@ Concept recap:
 
 **Next steps**:
 
-1. Submit the code to a dedicated POC directory in [xingai-enterprise-ai-pocs](https://github.com/xingaiapp/xingai-enterprise-ai-pocs)
+1. ~~Submit the code to a dedicated POC directory in xingai-enterprise-ai-pocs~~ **Done, 2026-07-12** — see [Claims MCP OAuth POC](https://github.com/xingaiapp/xingai-enterprise-ai-pocs/tree/main/pocs/claims-mcp-oauth-poc). Same code, ported to insurance claims adjudication instead of brokerage — proof this pattern isn't Robinhood-specific.
 2. Read the [production topology](../articles/2026-07-11-mcp-in-production-robinhood-case.md) to understand the Worker / FastAPI / Redis decision boundary
 3. Study [Invest AI ADR-028](https://github.com/xingaiapp/xingai-invest-ai/blob/main/docs/adr/028-robinhood-mcp-execution-gates.md) to see how a real product implements Review Gates
 4. Walk a colleague through the demo and explain why both "single-use Authorization Code" and "PKCE" are independently necessary
@@ -3731,7 +3731,8 @@ Authorizing an agent to access a service is not the same as authorizing the agen
 - **中文版：** [2026-07-12-mcp-oauth-pkce-lab.zh.md](2026-07-12-mcp-oauth-pkce-lab.zh.md)
 - **Concept deep dive:** [MCP Auth — The Robinhood Deep Dive](2026-07-12-mcp-oauth-auth-deep-dive.md)
 - **Production topology:** [MCP in Production — Robinhood Case Study](../articles/2026-07-11-mcp-in-production-robinhood-case.md)
-- **Implementation repo:** [xingai-robinhood-mcp](https://github.com/xingaiapp/xingai-robinhood-mcp)
+- **Implementation repo (brokerage domain):** [xingai-robinhood-mcp](https://github.com/xingaiapp/xingai-robinhood-mcp)
+- **Runnable POC (claims domain):** [claims-mcp-oauth-poc](https://github.com/xingaiapp/xingai-enterprise-ai-pocs/tree/main/pocs/claims-mcp-oauth-poc) — this lab's code, ported; plus a deep-dive doc explaining every OAuth/PKCE mechanism against the same code
 - **Invest AI execution gates:** [ADR-028](https://github.com/xingaiapp/xingai-invest-ai/blob/main/docs/adr/028-robinhood-mcp-execution-gates.md)
 
 ---

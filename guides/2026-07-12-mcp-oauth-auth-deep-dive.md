@@ -1429,6 +1429,10 @@ Build a runnable Auth Server + MCP Server + Client with a **simulated** portfoli
 
 → [Build an OAuth 2.1 + PKCE MCP project from scratch](2026-07-12-mcp-oauth-pkce-lab.md)
 
+See the same pattern applied outside brokerage, to insurance claims adjudication, as a runnable POC with a settlement-authority policy layer instead of a notional cap:
+
+→ [Claims MCP OAuth POC](https://github.com/xingaiapp/xingai-enterprise-ai-pocs/tree/main/pocs/claims-mcp-oauth-poc) — includes its own `docs/mcp-auth-deep-dive.md` mapping every concept from this article onto real claims-domain code
+
 Production topology and fail-closed gateway:
 
 → [How MCP Works in Production](../articles/2026-07-11-mcp-in-production-robinhood-case.md)
