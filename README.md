@@ -10,6 +10,8 @@ A collection of architectural patterns, frameworks, and best practices for build
 
 Hands-on learning tracks (concepts + labs). Index: [`guides/README.md`](guides/README.md).
 
+Shared engineer reference: [`docs/xingai-engineer-learning-resources.md`](docs/xingai-engineer-learning-resources.md).
+
 | Date | Title | Audience | Tags |
 |------|-------|----------|------|
 | 2026-07-12 | [MCP Auth from Robinhood — OAuth 2.1 / PKCE / Token Verification](guides/2026-07-12-mcp-oauth-auth-deep-dive.md) · [中文](guides/2026-07-12-mcp-oauth-auth-deep-dive.zh.md) | Engineers learning MCP auth | `mcp` `oauth` `pkce` `jwt` `education` |
