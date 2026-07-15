@@ -83,3 +83,46 @@ Use this as a foundation before designing agentic features. For XingAI products,
 - For Invest AI, do not put market/FRED/decision computation in FastAPI routes.
 - Broker or trading tools are high-risk by default. Read-only comes first; writes require explicit gates and audit.
 - Keep user-facing products as decision systems: one clear outcome, explainable next step, optional advanced agent behavior.
+
+## Quick Resource List
+
+### AI And Agent Foundations
+
+1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — Transformer and modern LLM foundations.
+2. [ReAct: Synergizing Reasoning and Acting](https://arxiv.org/abs/2210.03629) — The reasoning-and-action Agent Loop.
+3. [Anthropic: Building Effective AI Agents](https://www.anthropic.com/engineering/building-effective-agents) — Workflows versus autonomous agents.
+4. [Anthropic: How Tool Use Works](https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works) — Client-driven tool-calling loops.
+5. [Anthropic: Getting Started with Loops](https://claude.com/blog/getting-started-with-loops) — Turn-based, goal-based, time-based, and proactive loops.
+6. [OpenAI: Function Calling](https://developers.openai.com/api/docs/guides/function-calling) — Structured tool definitions and arguments.
+7. [OpenAI: Tools](https://developers.openai.com/api/docs/guides/tools) — OpenAI tools, hosted tools, connectors, and MCP.
+
+### RAG And Knowledge Systems
+
+8. [Retrieval-Augmented Generation](https://arxiv.org/abs/2005.11401) — Foundational RAG architecture and evaluation.
+
+### Protocols
+
+9. [MCP Introduction](https://modelcontextprotocol.io/introduction) — Beginner-friendly MCP overview.
+10. [MCP Specification](https://modelcontextprotocol.io/specification) — Official protocol specification.
+11. [A2A Protocol Specification](https://a2a-protocol.org/latest/specification/) — Agent-to-agent interoperability.
+12. [A2A GitHub Repository](https://github.com/a2aproject/A2A) — Implementations and examples.
+
+### Agent Frameworks
+
+13. [LangGraph Overview](https://docs.langchain.com/oss/python/langgraph/overview) — Stateful and durable agent workflows.
+14. [LangGraph Workflows and Agents](https://docs.langchain.com/oss/python/langgraph/workflows-agents) — Workflow, routing, and agent patterns.
+15. [AutoGen Documentation](https://microsoft.github.io/autogen/stable/) — Multi-agent collaboration patterns.
+
+### Security And Governance
+
+16. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — Govern, Map, Measure, and Manage AI risk.
+17. [NIST Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) — Generative AI governance, testing, provenance, and incidents.
+18. [OWASP GenAI Security Project](https://genai.owasp.org/) — LLM and Agent application security risks.
+
+### XingAI Internal References
+
+19. [XingAI Loop Engineering Primer](../articles/2026-07-15-anthropic-loop-engineering-getting-started.md)
+20. [Decision Cache Boundary](../../xingai-invest-ai/docs/adr/012-decision-cache-boundary.md)
+21. [MCP Phased Rollout](../../xingai-invest-ai/docs/adr/003-mcp-phased-rollout.md)
+22. [Robinhood Agentic Trading MCP](../../xingai-invest-ai/docs/wiki/robinhood-agentic-trading-mcp.md)
+23. [Robinhood MCP Execution Gates](../../xingai-invest-ai/docs/adr/028-robinhood-mcp-execution-gates.md)

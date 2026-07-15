@@ -64,3 +64,46 @@ English: [xingai-engineer-learning-resources.md](xingai-engineer-learning-resour
 - MCP 是集成边界，不是把决策移入请求时计算的理由。
 - 交易工具默认高风险；先只读，写操作必须审批与审计。
 - 用户产品保持为决策系统：明确结果、可解释下一步、可选高级 Agent 行为。
+
+## 快速资源清单
+
+### AI 与 Agent 基础
+
+1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — Transformer 与现代 LLM 基础。
+2. [ReAct](https://arxiv.org/abs/2210.03629) — 推理与行动 Agent Loop。
+3. [Building Effective AI Agents](https://www.anthropic.com/engineering/building-effective-agents) — Workflow 与自主 Agent。
+4. [How Tool Use Works](https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works) — 客户端驱动工具调用循环。
+5. [Getting Started with Loops](https://claude.com/blog/getting-started-with-loops) — Turn、Goal、Time 与 Proactive Loop。
+6. [OpenAI Function Calling](https://developers.openai.com/api/docs/guides/function-calling) — 结构化工具定义与参数。
+7. [OpenAI Tools](https://developers.openai.com/api/docs/guides/tools) — Tools、Hosted Tools、Connector 与 MCP。
+
+### RAG 与知识系统
+
+8. [Retrieval-Augmented Generation](https://arxiv.org/abs/2005.11401) — RAG 基础架构与评估。
+
+### 协议
+
+9. [MCP Introduction](https://modelcontextprotocol.io/introduction) — MCP 入门概览。
+10. [MCP Specification](https://modelcontextprotocol.io/specification) — 官方协议规范。
+11. [A2A Protocol Specification](https://a2a-protocol.org/latest/specification/) — Agent-to-Agent 互操作性。
+12. [A2A GitHub Repository](https://github.com/a2aproject/A2A) — 实现与示例。
+
+### Agent Framework
+
+13. [LangGraph Overview](https://docs.langchain.com/oss/python/langgraph/overview) — 有状态、持久化 Agent Workflow。
+14. [LangGraph Workflows and Agents](https://docs.langchain.com/oss/python/langgraph/workflows-agents) — Workflow、路由与 Agent 模式。
+15. [AutoGen Documentation](https://microsoft.github.io/autogen/stable/) — 多 Agent 协作模式。
+
+### 安全与治理
+
+16. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — Govern、Map、Measure、Manage AI 风险。
+17. [NIST Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) — 生成式 AI 治理、测试、来源与事故。
+18. [OWASP GenAI Security Project](https://genai.owasp.org/) — LLM 与 Agent 应用安全风险。
+
+### XingAI 内部参考
+
+19. [XingAI Loop Engineering 解读](../articles/2026-07-15-anthropic-loop-engineering-getting-started.zh.md)
+20. [Decision Cache Boundary](../../xingai-invest-ai/docs/adr/012-decision-cache-boundary.md)
+21. [MCP Phased Rollout](../../xingai-invest-ai/docs/adr/003-mcp-phased-rollout.md)
+22. [Robinhood Agentic Trading MCP](../../xingai-invest-ai/docs/wiki/robinhood-agentic-trading-mcp.md)
+23. [Robinhood MCP Execution Gates](../../xingai-invest-ai/docs/adr/028-robinhood-mcp-execution-gates.md)
