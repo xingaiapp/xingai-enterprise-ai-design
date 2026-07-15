@@ -10,6 +10,8 @@ A collection of architectural patterns, frameworks, and best practices for build
 
 Hands-on learning tracks (concepts + labs). Index: [`guides/README.md`](guides/README.md).
 
+Structured curriculum (levels 0–9): [`courses/README.md`](courses/README.md) · [中文](courses/README.zh.md).
+
 Shared engineer reference: [`docs/xingai-engineer-learning-resources.md`](docs/xingai-engineer-learning-resources.md).
 
 | Date | Title | Audience | Tags |
@@ -21,6 +23,7 @@ Shared engineer reference: [`docs/xingai-engineer-learning-resources.md`](docs/x
 
 | Date | Title | Audience | Tags |
 |------|-------|----------|------|
+| 2026-07-15 | [Anthropic's Loop Engineering Primer: Four Loop Types for Agent Work](articles/2026-07-15-anthropic-loop-engineering-getting-started.md) · [中文](articles/2026-07-15-anthropic-loop-engineering-getting-started.zh.md) | AI Architects, Platform Engineers, Tutor/Curriculum Authors | `architecture` `enterprise` `loop-engineering` `agents` `claude-code` `mcp` `education` `design-patterns` |
 | 2026-07-15 | [Third-Party MCP Access: API Key or OAuth 2.1? A Decision Framework](articles/2026-07-15-third-party-mcp-auth-api-key-vs-oauth2.md) · [中文](articles/2026-07-15-third-party-mcp-auth-api-key-vs-oauth2.zh.md) | Enterprise Architects, AI Architects, Security Reviewers, Platform Engineers | `architecture` `enterprise` `mcp` `oauth` `api-design` `security` `third-party-integration` `design-patterns` |
 | 2026-07-14 | [Redesigning the Agentic Claims Workflow: Fraud Sequencing, Escalation Routing, and Compliance Audit](articles/2026-07-14-claims-workflow-redesign-fraud-routing-audit.md) · [中文](articles/2026-07-14-claims-workflow-redesign-fraud-routing-audit.zh.md) | Enterprise Architects, AI Architects, Insurance Ops/Compliance | `architecture` `enterprise` `insurance` `claims` `agentic-ai` `workflow-design` `compliance` `audit-trail` `design-patterns` |
 | 2026-07-13 | [MCP API Coverage vs. Workflow Tools: A Claims Partner Integration Case Study](articles/2026-07-13-mcp-api-coverage-vs-workflow-tools.md) · [中文](articles/2026-07-13-mcp-api-coverage-vs-workflow-tools.zh.md) | Enterprise Architects, AI Architects, Platform Engineers, Security | `architecture` `enterprise` `mcp` `api-design` `tool-gateway` `insurance` `claims` `design-patterns` |

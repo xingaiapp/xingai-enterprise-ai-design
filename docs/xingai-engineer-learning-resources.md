@@ -19,6 +19,8 @@ Use this as a foundation before designing agentic features. For XingAI products,
 | Required | [Anthropic Docs, How tool use works](https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works) | Explains client-driven tool loops and how a model emits tool-use requests. |
 | Required | [OpenAI API Docs, Function calling](https://developers.openai.com/api/docs/guides/function-calling) | Structured schema design for tool calls and strict arguments. |
 | Required | [OpenAI API Docs, Tools](https://developers.openai.com/api/docs/guides/tools) | Current OpenAI tool surface, including hosted tools and MCP/connectors references. |
+| High | [Anthropic / Claude Code, Loop engineering: Getting started with loops](https://claude.com/blog/getting-started-with-loops) | Defines agentic loops as repeat-until-stop-condition work, and how turn-based, goal-based, time-based, and proactive loops differ — pairs with XingAI Loop Engineering articles. |
+| High | [XingAI reading note: Anthropic's Loop Engineering Primer](../articles/2026-07-15-anthropic-loop-engineering-getting-started.md) · [中文](../articles/2026-07-15-anthropic-loop-engineering-getting-started.zh.md) | Tutorial-oriented walkthrough of the four loop types, plus the Prompt → MCP → Loop reading timeline. |
 
 ## Protocols And Interoperability
 
@@ -50,14 +52,17 @@ Use this as a foundation before designing agentic features. For XingAI products,
 
 1. Read ReAct to understand the basic agent loop.
 2. Read Anthropic's agent article to separate deterministic workflows from autonomous agents.
-3. Read OpenAI function calling and tool docs to understand schema-first tool surfaces.
-4. Read MCP introduction, then the MCP specification.
-5. Read LangGraph only after you have a real stateful workflow need.
-6. For Invest AI or broker-related work, read the XingAI ADRs before writing code.
+3. Read [Getting started with loops](https://claude.com/blog/getting-started-with-loops) for concrete loop types (turn / goal / time / proactive) and stop conditions.
+4. Read OpenAI function calling and tool docs to understand schema-first tool surfaces.
+5. Read MCP introduction, then the MCP specification.
+6. Read LangGraph only after you have a real stateful workflow need.
+7. For Invest AI or broker-related work, read the XingAI ADRs before writing code.
+8. Pair the Claude loops guide with XingAI's [Beyond Prompt Engineering → Loop Engineering](../articles/2026-07-03-beyond-prompt-engineering-loop-engineering.md) and [Prompt to Loop architecture](../articles/2026-07-03-prompt-to-loop-ai-native-architecture.md) for the platform framing.
 
 ## XingAI Engineering Notes
 
 - Prefer workflow first, agent second. If the path is known, encode the workflow.
+- Prefer the simplest loop that fits: turn-based for one-off tasks; goal-/time-based only when stop conditions and verification are clear (see Anthropic's loops guide).
 - A tool schema is product UX for the model. Name parameters clearly and include boundaries.
 - MCP is an integration boundary, not a reason to move product decisions into request-time code.
 - For Invest AI, do not put market/FRED/decision computation in FastAPI routes.
