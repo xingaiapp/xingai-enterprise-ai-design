@@ -16,6 +16,20 @@ Used in:
 
 ---
 
+## Claims Settlement Workflow v2 (XingAI corrected design)
+
+SVG diagram — nine-stage claims pipeline with the three structural fixes: a split **Fraud Triage / Fraud Scoring** pair around damage assessment, an explicit **Case Resolution Router** with labeled return paths (replacing a single generic escalation box), and a cross-cutting **Compliance & Audit Trail Agent** lane. XingAI-branded footer credits the author and links back to xingai.app.
+
+![Claims Settlement Workflow v2 — XingAI corrected design](./claims-workflow-v2-xingai-branded.svg)
+
+Used in:
+
+- [Redesigning the Agentic Claims Workflow (EN)](../articles/2026-07-14-claims-workflow-redesign-fraud-routing-audit.md)
+- [重新设计理赔工作流 (中文)](../articles/2026-07-14-claims-workflow-redesign-fraud-routing-audit.zh.md)
+- [claims-workflow-v2-poc (runnable POC repo)](https://github.com/xingaiapp/xingai-enterprise-ai-pocs/tree/main/pocs/claims-workflow-v2-poc) — implements this exact design end to end
+
+---
+
 ## 1. 企业 AI 决策系统完整架构
 
 ```mermaid
