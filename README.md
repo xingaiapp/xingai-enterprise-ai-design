@@ -19,6 +19,7 @@ Hands-on learning tracks (concepts + labs). Index: [`guides/README.md`](guides/R
 
 | Date | Title | Audience | Tags |
 |------|-------|----------|------|
+| 2026-07-15 | [Third-Party MCP Access: API Key or OAuth 2.1? A Decision Framework](articles/2026-07-15-third-party-mcp-auth-api-key-vs-oauth2.md) · [中文](articles/2026-07-15-third-party-mcp-auth-api-key-vs-oauth2.zh.md) | Enterprise Architects, AI Architects, Security Reviewers, Platform Engineers | `architecture` `enterprise` `mcp` `oauth` `api-design` `security` `third-party-integration` `design-patterns` |
 | 2026-07-14 | [Redesigning the Agentic Claims Workflow: Fraud Sequencing, Escalation Routing, and Compliance Audit](articles/2026-07-14-claims-workflow-redesign-fraud-routing-audit.md) · [中文](articles/2026-07-14-claims-workflow-redesign-fraud-routing-audit.zh.md) | Enterprise Architects, AI Architects, Insurance Ops/Compliance | `architecture` `enterprise` `insurance` `claims` `agentic-ai` `workflow-design` `compliance` `audit-trail` `design-patterns` |
 | 2026-07-13 | [MCP API Coverage vs. Workflow Tools: A Claims Partner Integration Case Study](articles/2026-07-13-mcp-api-coverage-vs-workflow-tools.md) · [中文](articles/2026-07-13-mcp-api-coverage-vs-workflow-tools.zh.md) | Enterprise Architects, AI Architects, Platform Engineers, Security | `architecture` `enterprise` `mcp` `api-design` `tool-gateway` `insurance` `claims` `design-patterns` |
 | 2026-07-11 | [How MCP Works in Production: A Deep Dive from Robinhood Trading MCP](articles/2026-07-11-mcp-in-production-robinhood-case.md) · [中文](articles/2026-07-11-mcp-in-production-robinhood-case.zh.md) | Enterprise Architects, AI Architects, Platform Engineers, Security | `architecture` `enterprise` `mcp` `oauth` `agents` `tool-gateway` `governance` `broker-integration` `human-in-the-loop` |
@@ -123,4 +124,4 @@ Content is published under [CC BY 4.0](https://creativecommons.org/licenses/by/4
 
 **Author:** Xing Wang, AI Architect  
 **Brand:** XingAI  
-**Updated:** July 14, 2026
+**Updated:** July 15, 2026
