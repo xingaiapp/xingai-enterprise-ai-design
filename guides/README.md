@@ -2,6 +2,8 @@
 
 Step-by-step learning tracks that sit beside the architecture articles. Same bilingual rule: English (`.md`) + 中文 (`.zh.md`).
 
+For the complete beginner-to-CTO sequence, start with the [XingAI AI Engineering Learning Series](../courses/README.md) · [中文](../courses/README.zh.md). The guides below are deeper companion labs referenced by the curriculum.
+
 Architecture deep dives stay under [`articles/`](../articles/). These guides teach **industry-standard mechanics** with runnable lab outlines — they are not product marketing and not investment advice.
 
 ## Guides

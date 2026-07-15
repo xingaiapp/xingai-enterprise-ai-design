@@ -1,6 +1,10 @@
 # XingAI Engineer Learning Resources
 
+Chinese: [xingai-engineer-learning-resources.zh.md](xingai-engineer-learning-resources.zh.md)
+
 Purpose: shared reading list for XingAI engineers building enterprise AI decision systems, agent workflows, MCP integrations, and safe tool-using product surfaces.
+
+Version-sensitive references last verified: July 15, 2026.
 
 Audience:
 
@@ -39,6 +43,16 @@ Use this as a foundation before designing agentic features. For XingAI products,
 | High | [LangGraph workflows + agents](https://docs.langchain.com/oss/python/langgraph/workflows-agents) | Useful for deciding when to model a feature as a graph workflow. |
 | Medium | [AutoGen documentation](https://microsoft.github.io/autogen/stable/) | Multi-agent collaboration patterns; useful reference, but not a default dependency. |
 
+## Models, Retrieval, Security, And Governance
+
+| Priority | Resource | Why it matters for XingAI |
+|---|---|---|
+| Required foundation | [Vaswani et al. (2017), Attention Is All You Need](https://arxiv.org/abs/1706.03762) | Transformer architecture foundation for modern LLMs. |
+| Required for RAG | [Lewis et al. (2020), Retrieval-Augmented Generation](https://arxiv.org/abs/2005.11401) | Foundational retrieval-plus-generation architecture and evaluation framing. |
+| Required for production | [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | Lifecycle risk framework organized around Govern, Map, Measure, and Manage. |
+| Required for generative AI | [NIST Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) | Generative-AI-specific risks and actions for governance, provenance, testing, and incident disclosure. |
+| Required for security | [OWASP GenAI Security Project](https://genai.owasp.org/) | Application-security risks and mitigations for LLM and agent systems. |
+
 ## XingAI-Specific MCP And Safety References
 
 | Priority | Resource | Why it matters for XingAI |
@@ -58,6 +72,7 @@ Use this as a foundation before designing agentic features. For XingAI products,
 6. Read LangGraph only after you have a real stateful workflow need.
 7. For Invest AI or broker-related work, read the XingAI ADRs before writing code.
 8. Pair the Claude loops guide with XingAI's [Beyond Prompt Engineering → Loop Engineering](../articles/2026-07-03-beyond-prompt-engineering-loop-engineering.md) and [Prompt to Loop architecture](../articles/2026-07-03-prompt-to-loop-ai-native-architecture.md) for the platform framing.
+9. Before production release, apply NIST lifecycle governance and perform a dedicated OWASP-aligned security review.
 
 ## XingAI Engineering Notes
 
@@ -68,4 +83,3 @@ Use this as a foundation before designing agentic features. For XingAI products,
 - For Invest AI, do not put market/FRED/decision computation in FastAPI routes.
 - Broker or trading tools are high-risk by default. Read-only comes first; writes require explicit gates and audit.
 - Keep user-facing products as decision systems: one clear outcome, explainable next step, optional advanced agent behavior.
-
