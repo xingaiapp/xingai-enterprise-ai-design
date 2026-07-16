@@ -2,6 +2,8 @@
 
 从第一性原理到 CTO 级 AI 领导力。本双语课程要求学习者能够解释、构建、调试、运营、架构并领导 AI 系统，也用于准备常见 AI 面试流程，但不承诺特定录用结果。
 
+这是一个**文档课程**，不是 [`xingai-learn`](../../xingai-learn/README.md) Coding Interview 产品。Learn AI 根据用户提交的面试题推荐下一步 Coding Pattern；本课程通过课时与评估教授 AI 工程能力。
+
 English: [README.md](README.md)
 
 ## 学习路径

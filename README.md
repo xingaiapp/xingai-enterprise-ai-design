@@ -18,6 +18,19 @@ Program resources: [assessment framework](assessments/README.md) · [中文](ass
 
 Shared engineer reference: [`docs/xingai-engineer-learning-resources.md`](docs/xingai-engineer-learning-resources.md) · [中文](docs/xingai-engineer-learning-resources.zh.md).
 
+### Learning Product Boundary
+
+This repository owns **educational source material and reference implementations** for AI engineers, architects, and CTOs. It is separate from [`xingai-learn`](../xingai-learn/README.md), the learner-facing coding-interview decision product at `learn.xingai.app`.
+
+| Surface | Input | Primary outcome | Runtime ownership |
+|---|---|---|---|
+| Learn AI product | Interview question or screenshot | Next coding pattern to practice | `xingai-learn` |
+| Foundation curriculum | AI engineering competency | Lesson, exercise, and interview gate | `courses/` |
+| Deep enterprise curriculum | Enterprise architecture problem | Deep lab and review evidence | `deep-enterprise-ai/` |
+| Reference POC | Lab requirements and simulated claims data | Tested production-shaped implementation | `enterprise-poc/` |
+
+Do not merge their databases, progress models, or runtime code. Learn AI may link to a relevant public lesson later, but the curriculum must not replace Learn AI's question → pattern → next-practice decision flow.
+
 | Date | Title | Audience | Tags |
 |------|-------|----------|------|
 | 2026-07-12 | [MCP Auth from Robinhood — OAuth 2.1 / PKCE / Token Verification](guides/2026-07-12-mcp-oauth-auth-deep-dive.md) · [中文](guides/2026-07-12-mcp-oauth-auth-deep-dive.zh.md) | Engineers learning MCP auth | `mcp` `oauth` `pkce` `jwt` `education` |

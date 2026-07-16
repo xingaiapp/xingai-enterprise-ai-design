@@ -2,6 +2,8 @@
 
 From first principles to CTO-level AI leadership. This bilingual curriculum teaches learners to explain, build, debug, operate, architect, and lead AI systems. It prepares candidates for common AI interview loops; it does not promise a particular hiring outcome.
 
+This is a **documentation curriculum**, not the [`xingai-learn`](../../xingai-learn/README.md) coding-interview product. Learn AI recommends the next coding pattern from a submitted interview question; this curriculum teaches AI engineering competencies through lessons and assessments.
+
 Chinese: [README.zh.md](README.zh.md)
 
 ## Learning Path
