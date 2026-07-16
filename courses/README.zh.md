@@ -20,6 +20,7 @@ English: [README.md](README.md)
 | 7 | [企业 AI 决策系统](07-enterprise-decision-systems/README.zh.md) | 答辩受治理的参考架构 | AI 架构师 |
 | 8 | [AI 领导力与 CTO 战略](08-ai-leadership-cto/README.zh.md) | 答辩投资方案与运营模型 | Principal / 总监 / CTO |
 | 9 | [AI 面试精通](09-ai-interview-mastery/README.zh.md) | 完成校准后的 **AI 岗位**面试循环 | 全级别 |
+| 10 | [OAuth、OIDC、Azure 身份与 API 安全](10-oauth-oidc-azure-identity/README.zh.md) | 完成受保护的 OAuth/OIDC + 双墙 MCP/API 实验 | 平台 / 安全 / 高级 AI |
 
 ## 强制课程契约
 

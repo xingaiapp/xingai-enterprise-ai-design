@@ -54,6 +54,8 @@ assert TOOL["inputSchema"]["additionalProperties"] is False
 
 扩展现有 [OAuth + PKCE MCP 实验](../../guides/2026-07-12-mcp-oauth-pkce-lab.zh.md)：加入 Protected Resource Discovery、只读工具、独立 Scope 的提案工具、审计事件及负向授权测试。解释 MCP 与 API Gateway、Workflow Engine、A2A 的区别。达到 80/100。
 
+完整身份主线（IAM → Entra → MCP）继续学习 [课程 10：OAuth、OIDC、Azure 身份与 API 安全](../10-oauth-oidc-azure-identity/README.zh.md)。
+
 ## 参考资料
 
 [MCP 规范](https://modelcontextprotocol.io/specification) · [MCP Authorization](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization) · [A2A 规范](https://a2a-protocol.org/latest/specification/)

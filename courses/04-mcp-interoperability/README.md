@@ -54,6 +54,8 @@ Never pass through upstream tokens, accept a token intended for another resource
 
 Extend the existing [OAuth + PKCE MCP lab](../../guides/2026-07-12-mcp-oauth-pkce-lab.md) with protected-resource discovery, a read tool, a separately scoped proposal tool, audit events, and negative authorization tests. Explain MCP versus API gateway, workflow engine, and A2A. Pass at 80/100.
 
+For the full identity spine (IAM → Entra → MCP), continue with [Course 10: OAuth, OIDC, Azure Identity & API Security](../10-oauth-oidc-azure-identity/README.md).
+
 ## Sources
 
 [MCP specification](https://modelcontextprotocol.io/specification) · [MCP authorization](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization) · [A2A specification](https://a2a-protocol.org/latest/specification/)

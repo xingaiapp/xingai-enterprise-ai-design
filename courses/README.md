@@ -20,6 +20,7 @@ Chinese: [README.zh.md](README.zh.md)
 | 7 | [Enterprise AI Decision Systems](07-enterprise-decision-systems/README.md) | Defend a governed reference architecture | AI architect |
 | 8 | [AI Leadership and CTO Strategy](08-ai-leadership-cto/README.md) | Defend an investment and operating model | Principal / director / CTO |
 | 9 | [AI Interview Mastery](09-ai-interview-mastery/README.md) | Complete a calibrated **AI-role** interview loop | All levels |
+| 10 | [OAuth, OIDC, Azure Identity & API Security](10-oauth-oidc-azure-identity/README.md) | Secure OAuth/OIDC + two-wall MCP/API lab | Platform / security / senior AI |
 
 ## Required Lesson Contract
 

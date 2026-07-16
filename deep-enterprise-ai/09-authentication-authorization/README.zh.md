@@ -34,3 +34,5 @@ PolicyEngine().authorize(request)  # 允许时返回，否则抛出异常
 
 测试过期/错误 Audience Token、跨 Tenant、缺 Scope、Confused Deputy、Service/User 身份混淆、权限漂移及审批到执行之间的 TOCTOU。设计 RBAC + ABAC，不得把策略编码在 Prompt 中。
 
+完整专项：[课程 10 — OAuth、OIDC、Azure 身份与 API 安全](../../courses/10-oauth-oidc-azure-identity/README.zh.md)。
+

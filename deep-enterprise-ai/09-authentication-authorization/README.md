@@ -34,3 +34,5 @@ PolicyEngine().authorize(request)  # returns only by allowing; otherwise raises
 
 Test expired/wrong-audience tokens, cross-tenant access, missing scope, confused deputy, service/user identity mix-up, privilege drift, and TOCTOU between approval and execution. Design RBAC + ABAC without encoding policy in prompts.
 
+Full specialization: [Course 10 — OAuth, OIDC, Azure Identity & API Security](../../courses/10-oauth-oidc-azure-identity/README.md).
+

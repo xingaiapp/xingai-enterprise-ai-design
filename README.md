@@ -10,7 +10,7 @@ A collection of architectural patterns, frameworks, and best practices for build
 
 Hands-on learning tracks (concepts + labs). Index: [`guides/README.md`](guides/README.md).
 
-Structured curriculum (levels 0–9): [`courses/README.md`](courses/README.md) · [中文](courses/README.zh.md).
+Structured curriculum (levels 0–10): [`courses/README.md`](courses/README.md) · [中文](courses/README.zh.md). **Course 10** adds OAuth/OIDC/Azure Identity & API Security (26 modules).
 
 Deep enterprise engineering track: [`deep-enterprise-ai/README.md`](deep-enterprise-ai/README.md) · [中文](deep-enterprise-ai/README.zh.md) · [runnable reference POC](enterprise-poc/README.md) · [中文](enterprise-poc/README.zh.md).
 
