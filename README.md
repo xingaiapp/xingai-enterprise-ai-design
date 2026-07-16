@@ -12,6 +12,8 @@ Hands-on learning tracks (concepts + labs). Index: [`guides/README.md`](guides/R
 
 Structured curriculum (levels 0–9): [`courses/README.md`](courses/README.md) · [中文](courses/README.zh.md).
 
+Deep enterprise engineering track: [`deep-enterprise-ai/README.md`](deep-enterprise-ai/README.md) · [中文](deep-enterprise-ai/README.zh.md) · [runnable reference POC](enterprise-poc/README.md) · [中文](enterprise-poc/README.zh.md).
+
 Program resources: [assessment framework](assessments/README.md) · [中文](assessments/README.zh.md) · [capstones](capstones/README.md) · [中文](capstones/README.zh.md) · [interview bank](interview-bank/README.md) · [中文](interview-bank/README.zh.md).
 
 Shared engineer reference: [`docs/xingai-engineer-learning-resources.md`](docs/xingai-engineer-learning-resources.md) · [中文](docs/xingai-engineer-learning-resources.zh.md).

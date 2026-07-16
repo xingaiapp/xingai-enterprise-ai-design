@@ -44,3 +44,6 @@ Every course follows [COURSE-STANDARD.md](COURSE-STANDARD.md): 5W + How, code, M
 
 See the [assessment framework](../assessments/README.md), [capstones](../capstones/README.md), and [interview bank](../interview-bank/README.md).
 
+## Advanced Track
+
+After completing the role-relevant foundation courses, continue with [Deep Enterprise AI Engineering](../deep-enterprise-ai/README.md). It adds a production-shaped reference POC, enterprise RAG, harness and loop engineering, agent-framework comparison, controlled multi-agent design, MCP, identity/policy, security, observability, audit, evaluation, operations, and CTO architecture defense.

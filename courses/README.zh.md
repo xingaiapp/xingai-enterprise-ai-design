@@ -44,3 +44,6 @@ English: [README.md](README.md)
 
 参见[评估框架](../assessments/README.zh.md)、[结业项目](../capstones/README.zh.md)与[面试题库](../interview-bank/README.zh.md)。
 
+## 高级路径
+
+完成岗位相关基础课程后，继续学习[企业 AI 深度工程课程](../deep-enterprise-ai/README.zh.md)。该路径增加 Production-shaped 参考 POC、企业 RAG、Harness 与 Loop Engineering、Agent Framework 对比、受控多 Agent、MCP、身份/策略、安全、可观测性、审计、评估、运营与 CTO 架构答辩。
