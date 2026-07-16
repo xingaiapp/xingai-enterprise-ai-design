@@ -2,6 +2,8 @@
 
 Chinese: [README.zh.md](README.zh.md) | Prerequisite: target-role courses | Gate: two calibrated mock loops
 
+> This course trains **AI engineer / architect / CTO hiring loops** (coding-for-AI-systems, ML depth, system design, governance). It is not [Learn AI](https://learn.xingai.app)’s coding-pattern practice product.
+
 ## 5W + How
 
 - **What:** an AI interview samples coding, ML/LLM understanding, experimentation, debugging, system design, product judgment, security, leadership, and communication.

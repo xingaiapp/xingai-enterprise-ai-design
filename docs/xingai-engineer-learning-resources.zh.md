@@ -4,6 +4,8 @@ English: [xingai-engineer-learning-resources.md](xingai-engineer-learning-resour
 
 用途：为构建企业 AI 决策系统、Agent Workflow、MCP 集成和安全工具调用产品的 XingAI 工程师提供共享阅读清单。
 
+**不是** [Learn AI](https://learn.xingai.app) 产品（编程面试 Pattern 决策），也**不能替代** [`courses/`](../courses/README.zh.md) 或 [`deep-enterprise-ai/`](../deep-enterprise-ai/README.zh.md) 的结构化课程。论文与厂商文档用本清单；分阶段实验与门槛用课程轨道。
+
 版本敏感资料最后核验日期：2026 年 7 月 15 日。
 
 受众包括 XingAI 工程师、Cursor/Codex/Agent Workflow 作者、企业 AI 架构师与平台工程师。设计 Agentic 功能前应掌握这些基础。XingAI 产品优先建设决策系统，只有当 Chat/Agent 能改善主决策路径时才引入。

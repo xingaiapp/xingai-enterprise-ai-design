@@ -2,7 +2,9 @@
 
 Chinese: [README.zh.md](README.zh.md)
 
-Use questions as prompts, not scripts. Score the evidence, reasoning, correction behavior, and communication appropriate to the role.
+Use questions as prompts, not scripts. Score the evidence, reasoning, correction behavior, and communication appropriate to the **AI engineering / architect / leadership role**.
+
+This bank is for **hiring-loop practice**, not [Learn AI](https://learn.xingai.app) coding-pattern drills.
 
 ## Beginner
 

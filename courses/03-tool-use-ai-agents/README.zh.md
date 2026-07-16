@@ -2,6 +2,8 @@
 
 English: [README.md](README.md) | 前置课程：课程 01 | 门槛：安全比较工作流与 Agent
 
+> 本课的实验与面试门槛是 **AI 岗位面试答辩**（ReAct、工具 Loop、注入、执行风险）——不是刷题式 DSA Pattern。后者属于 [Learn AI](https://learn.xingai.app)。
+
 ## 5W + How
 
 - **What：** 工作流遵循编码路径；Agent 在受限权限内由模型选择步骤与工具。

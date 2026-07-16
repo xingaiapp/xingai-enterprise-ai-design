@@ -2,7 +2,9 @@
 
 English: [README.md](README.md)
 
-题目用于引导，不是背诵脚本。根据岗位级别评估证据、推理、纠错行为与沟通能力。
+题目用于引导，不是背诵脚本。根据 **AI 工程 / 架构 / 领导力岗位** 评估证据、推理、纠错行为与沟通能力。
+
+本仓库是 **岗位面试循环** 练习，不是 [Learn AI](https://learn.xingai.app) 的 Coding Pattern 刷题。
 
 ## 初学者
 

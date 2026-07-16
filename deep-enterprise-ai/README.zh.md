@@ -4,7 +4,7 @@ English: [README.md](README.md) | 参考 POC：[enterprise-poc](../enterprise-po
 
 这是面向企业 AI 系统建设与答辩的高级双语课程。建议先完成现有[基础路径](../courses/README.zh.md)。每门课包含 5W + How、图表、连接参考 POC 的代码、实验、生产故障与面试答辩。
 
-这是基础课程的高级延续，不是第二个消费者产品，也不替代 [`xingai-learn`](../../xingai-learn/README.md)。学习者在此完成工程实验；Learn AI 继续负责 Coding Question 分析与下一 Pattern 练习决策。
+这是基础课程的高级延续，不是第二个消费者产品，也不替代 [Learn AI](https://learn.xingai.app)（[`xingai-learn`](https://github.com/xingaiapp/xingai-learn)）。学习者在此完成工程实验；Learn AI 继续负责 Coding Question 分析与下一 **Pattern** 练习决策。
 
 ## 课程路径
 

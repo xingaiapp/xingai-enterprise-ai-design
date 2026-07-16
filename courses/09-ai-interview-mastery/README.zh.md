@@ -2,6 +2,8 @@
 
 English: [README.md](README.md) | 前置课程：目标岗位相关课程 | 门槛：两轮校准后的模拟面试
 
+> 本课训练的是 **AI 工程师 / 架构师 / CTO 岗位面试循环**（面向 AI 系统的编码、ML 深度、系统设计、治理）。不是 [Learn AI](https://learn.xingai.app) 的 Coding Pattern 刷题产品。
+
 ## 5W + How
 
 - **What：** AI 面试通常抽样考察编码、ML/LLM 理解、实验、调试、系统设计、产品判断、安全、领导力与沟通。

@@ -4,6 +4,8 @@ Chinese: [xingai-engineer-learning-resources.zh.md](xingai-engineer-learning-res
 
 Purpose: shared reading list for XingAI engineers building enterprise AI decision systems, agent workflows, MCP integrations, and safe tool-using product surfaces.
 
+**Not** the [Learn AI](https://learn.xingai.app) product (coding-interview pattern decisions) and **not** a substitute for the structured tracks in [`courses/`](../courses/README.md) or [`deep-enterprise-ai/`](../deep-enterprise-ai/README.md). Use this list for foundational papers and vendor docs; use the curriculum for sequenced labs and gates.
+
 Version-sensitive references last verified: July 15, 2026.
 
 Audience:

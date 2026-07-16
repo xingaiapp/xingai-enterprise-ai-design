@@ -2,6 +2,8 @@
 
 Chinese: [README.zh.md](README.zh.md) | Prerequisite: Course 01 | Gate: safe workflow/agent comparison
 
+> Lab and interview gates here mean **AI-role hiring defense** (ReAct, tool loops, injection, exec risk)—not LeetCode pattern drills. Those belong in [Learn AI](https://learn.xingai.app).
+
 ## 5W + How
 
 - **What:** a workflow follows coded paths; an agent lets a model choose steps and tools within bounded authority.

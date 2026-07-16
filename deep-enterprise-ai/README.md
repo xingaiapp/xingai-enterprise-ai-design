@@ -4,7 +4,7 @@ Chinese: [README.zh.md](README.zh.md) | Reference POC: [enterprise-poc](../enter
 
 An advanced bilingual program for building and defending enterprise AI systems. Complete the existing [foundation track](../courses/README.md) first. Every course includes 5W + How, diagrams, code tied to the reference POC, a lab, production failures, and interview defense.
 
-This is the advanced continuation of the foundation curriculum, not a second consumer product and not a replacement for [`xingai-learn`](../../xingai-learn/README.md). The learner completes engineering labs here; Learn AI continues to own coding-question analysis and next-pattern practice.
+This is the advanced continuation of the foundation curriculum, not a second consumer product and not a replacement for [Learn AI](https://learn.xingai.app) ([`xingai-learn`](https://github.com/xingaiapp/xingai-learn)). The learner completes engineering labs here; Learn AI continues to own coding-question analysis and next-**pattern** practice.
 
 ## Course Path
 

@@ -20,16 +20,18 @@ Shared engineer reference: [`docs/xingai-engineer-learning-resources.md`](docs/x
 
 ### Learning Product Boundary
 
-This repository owns **educational source material and reference implementations** for AI engineers, architects, and CTOs. It is separate from [`xingai-learn`](../xingai-learn/README.md), the learner-facing coding-interview decision product at `learn.xingai.app`.
+This repository owns **educational source material and reference implementations** for AI engineers, architects, and CTOs. It is separate from [Learn AI](https://learn.xingai.app) ([`xingai-learn`](https://github.com/xingaiapp/xingai-learn)), the coding-interview **decision** product.
 
 | Surface | Input | Primary outcome | Runtime ownership |
 |---|---|---|---|
-| Learn AI product | Interview question or screenshot | Next coding pattern to practice | `xingai-learn` |
-| Foundation curriculum | AI engineering competency | Lesson, exercise, and interview gate | `courses/` |
+| Learn AI product | Coding interview question or screenshot | Next **coding pattern** to practice | [`xingai-learn`](https://github.com/xingaiapp/xingai-learn) |
+| Foundation curriculum | AI engineering competency | Lesson, exercise, and **AI hiring-loop** gate | `courses/` |
 | Deep enterprise curriculum | Enterprise architecture problem | Deep lab and review evidence | `deep-enterprise-ai/` |
-| Reference POC | Lab requirements and simulated claims data | Tested production-shaped implementation | `enterprise-poc/` |
+| Reference POC | Lab requirements and simulated claims data | Tested production-shaped teaching implementation | `enterprise-poc/` |
 
-Do not merge their databases, progress models, or runtime code. Learn AI may link to a relevant public lesson later, but the curriculum must not replace Learn AI's question → pattern → next-practice decision flow.
+**中文要点：** Learn AI（`learn.xingai.app`）根据一道编程面试题推荐下一步 Coding Pattern；本仓库的 `courses/` / `deep-enterprise-ai/` 教的是 AI 工程师到 CTO 的岗位能力与企业架构实验。二者数据库、进度模型、运行时互不合并。
+
+Do not merge their databases, progress models, or runtime code. Learn AI may link to a relevant public lesson later, but the curriculum must not replace Learn AI's question → pattern → next-practice decision flow. Curriculum “interview” means **AI-role hiring loops** (system design, RAG, tools, governance)—not LeetCode pattern drills (those belong in Learn AI).
 
 | Date | Title | Audience | Tags |
 |------|-------|----------|------|
@@ -104,10 +106,10 @@ We build **AI Decision Systems for Everyday Life** — focused tools that help p
 - **Health** — Meal Coach
 - **Finance** — Invest AI
 - **Travel** — Travel AI
-- **Education** — SAT AI
+- **Education (learners)** — Learn AI (coding-interview patterns), Research AI, SAT AI
 - **Lifestyle** — Outfit AI, Routine AI
 
-This repository shares the architectural thinking that powers these systems.
+This repository shares the **architectural thinking and engineer curriculum** behind those systems. It is not Learn AI’s runtime.
 
 ## Key Articles Coming
 
@@ -146,4 +148,4 @@ Content is published under [CC BY 4.0](https://creativecommons.org/licenses/by/4
 
 **Author:** Xing Wang, AI Architect  
 **Brand:** XingAI  
-**Updated:** July 15, 2026
+**Updated:** July 16, 2026

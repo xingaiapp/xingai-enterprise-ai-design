@@ -1,14 +1,14 @@
 # XingAI AI Engineering Learning Series
 
-From first principles to CTO-level AI leadership. This bilingual curriculum teaches learners to explain, build, debug, operate, architect, and lead AI systems. It prepares candidates for common AI interview loops; it does not promise a particular hiring outcome.
+From first principles to CTO-level AI leadership. This bilingual curriculum teaches learners to explain, build, debug, operate, architect, and lead AI systems. It prepares candidates for common **AI engineering hiring loops**; it does not promise a particular hiring outcome.
 
-This is a **documentation curriculum**, not the [`xingai-learn`](../../xingai-learn/README.md) coding-interview product. Learn AI recommends the next coding pattern from a submitted interview question; this curriculum teaches AI engineering competencies through lessons and assessments.
+This is a **documentation curriculum**, not [Learn AI](https://learn.xingai.app) ([`xingai-learn`](https://github.com/xingaiapp/xingai-learn)). Learn AI recommends the next **coding pattern** from a submitted LeetCode-style interview question. This curriculum teaches **AI engineering / architect competencies** through lessons and assessments — system design, tools, RAG, MCP, governance — not DSA pattern drills.
 
 Chinese: [README.zh.md](README.zh.md)
 
 ## Learning Path
 
-| Level | Course | Primary evidence | Interview target |
+| Level | Course | Primary evidence | Hiring-loop target |
 |---|---|---|---|
 | 0 | [AI Foundations](00-ai-foundations/README.md) | Explain and run a small semantic system | Beginner / intern |
 | 1 | [LLM Application Engineering](01-llm-application-engineering/README.md) | Build a typed LLM application boundary | Junior AI engineer |
@@ -19,7 +19,7 @@ Chinese: [README.zh.md](README.zh.md)
 | 6 | [Production AI Engineering](06-production-ai-engineering/README.md) | Operate evaluated, observable AI | Staff / platform engineer |
 | 7 | [Enterprise AI Decision Systems](07-enterprise-decision-systems/README.md) | Defend a governed reference architecture | AI architect |
 | 8 | [AI Leadership and CTO Strategy](08-ai-leadership-cto/README.md) | Defend an investment and operating model | Principal / director / CTO |
-| 9 | [AI Interview Mastery](09-ai-interview-mastery/README.md) | Complete a calibrated interview loop | All levels |
+| 9 | [AI Interview Mastery](09-ai-interview-mastery/README.md) | Complete a calibrated **AI-role** interview loop | All levels |
 
 ## Required Lesson Contract
 
