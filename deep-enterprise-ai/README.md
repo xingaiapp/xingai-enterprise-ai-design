@@ -24,6 +24,7 @@ This is the advanced continuation of the foundation curriculum, not a second con
 | 12 | [Evaluation and testing](12-evaluation-testing/README.md) | Regression and release harness |
 | 13 | [Production operations](13-production-operations/README.md) | Deployment, SLO, rollback, recovery |
 | 14 | [Enterprise architecture and CTO](14-enterprise-architecture-cto/README.md) | Architecture and board defense |
+| 15 | [Microsoft Entra and Claims MCP Security](15-entra-claims-mcp-security/README.md) | End-to-end Entra + Claims MCP identity build |
 
 ## Completion
 

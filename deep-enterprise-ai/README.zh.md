@@ -24,6 +24,7 @@ English: [README.md](README.md) | 参考 POC：[enterprise-poc](../enterprise-po
 | 12 | [评估与测试](12-evaluation-testing/README.zh.md) | 回归与发布 Harness |
 | 13 | [生产运营](13-production-operations/README.zh.md) | 部署、SLO、回滚与恢复 |
 | 14 | [企业架构与 CTO](14-enterprise-architecture-cto/README.zh.md) | 架构与董事会答辩 |
+| 15 | [Microsoft Entra 与 Claims MCP 安全](15-entra-claims-mcp-security/README.zh.md) | 端到端 Entra + Claims MCP 身份构建 |
 
 ## 完成标准
 
