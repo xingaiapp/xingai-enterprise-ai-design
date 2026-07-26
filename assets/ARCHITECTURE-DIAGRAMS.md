@@ -2,6 +2,21 @@
 
 这个文件包含了文章中所有核心概念的高分辨率架构图表。
 
+## Evidence Engine + Eval Registry (UX)
+
+PNG diagram — worker/cache verification pipeline with EEE eval gate (not a product UI):
+
+![Evidence Engine + Eval Registry UX](./evidence-engine-eval-registry-system-design-ux.png)
+
+Used in:
+
+- [Evidence Engine + Eval Registry (EN)](../articles/2026-07-26-evidence-engine-eval-registry.md)
+- [Evidence Engine + Eval Registry (中文)](../articles/2026-07-26-evidence-engine-eval-registry.zh.md)
+- [xingai-evidence-engine](https://github.com/xingaiapp/xingai-evidence-engine)
+- [xingai-eval-registry](https://github.com/xingaiapp/xingai-eval-registry)
+
+---
+
 ## Orchestrator vs MCP Gateway (UX)
 
 PNG diagram for dev teams — **no separate Orchestration MCP**:
