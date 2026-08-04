@@ -2,6 +2,48 @@
 
 这个文件包含了文章中所有核心概念的高分辨率架构图表。
 
+## Daily Investment Zhibao (UX)
+
+PNG — Invest AI worker pipeline for 每日投资智报 (not product UI):
+
+![Daily Investment Zhibao UX](./daily-investment-zhibao-system-design-ux.png)
+
+Used in:
+
+- [Daily Investment Zhibao (EN)](../articles/2026-08-04-daily-investment-zhibao-worker-pipeline.md)
+- [每日投资智报 (中文)](../articles/2026-08-04-daily-investment-zhibao-worker-pipeline.zh.md)
+- [xingai-invest-ai ADR-040](https://github.com/xingaiapp/xingai-invest-ai/blob/main/docs/adr/040-daily-investment-zhibao-pdf.md)
+
+---
+
+## Evidence Honesty Stack — Overlay / PDF Refs / Citation Dates (UX)
+
+PNG — ADR-009–011 honesty layers on Evidence Engine:
+
+![Evidence Honesty Overlay UX](./evidence-honesty-overlay-system-design-ux.png)
+
+Used in:
+
+- [Evidence Honesty Stack (EN)](../articles/2026-08-04-evidence-honesty-overlay-pdf-citation-dates.md)
+- [Evidence 诚实栈 (中文)](../articles/2026-08-04-evidence-honesty-overlay-pdf-citation-dates.zh.md)
+- [xingai-evidence-engine](https://github.com/xingaiapp/xingai-evidence-engine)
+
+---
+
+## XNP Phase 2 Foundation (UX)
+
+PNG — modular monolith skeleton (API, Worker, Postgres outbox, JWT):
+
+![XNP Phase 2 Foundation UX](./xnp-phase-2-foundation-system-design-ux.png)
+
+Used in:
+
+- [XNP Phase 2 Foundation (EN)](../articles/2026-08-04-xnp-phase-2-foundation-system-design.md)
+- [XNP Phase 2 Foundation (中文)](../articles/2026-08-04-xnp-phase-2-foundation-system-design.zh.md)
+- [xingai-notification-platform](https://github.com/xingaiapp/xingai-notification-platform)
+
+---
+
 ## Evidence Engine + Eval Registry (UX)
 
 PNG diagram — worker/cache verification pipeline with EEE eval gate (not a product UI):
