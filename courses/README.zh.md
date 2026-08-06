@@ -21,6 +21,7 @@ English: [README.md](README.md)
 | 8 | [AI 领导力与 CTO 战略](08-ai-leadership-cto/README.zh.md) | 答辩投资方案与运营模型 | Principal / 总监 / CTO |
 | 9 | [AI 面试精通](09-ai-interview-mastery/README.zh.md) | 完成校准后的 **AI 岗位**面试循环 | 全级别 |
 | 10 | [OAuth、OIDC、Azure 身份与 API 安全](10-oauth-oidc-azure-identity/README.zh.md) | 完成受保护的 OAuth/OIDC + 双墙 MCP/API 实验 | 平台 / 安全 / 高级 AI |
+| 领域 | [面向架构师的理赔业务](claim-business/README.zh.md) · [EN](claim-business/README.md) | 讲清 Claim Lifecycle、TPA vs Carrier、Reserve/Payment，并设计可审计理赔平台（示意 TPA / Property–CTABS） | 进入保险理赔项目的解决方案架构师 |
 
 ## 强制课程契约
 
