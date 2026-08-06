@@ -2,6 +2,20 @@
 
 这个文件包含了文章中所有核心概念的高分辨率架构图表。
 
+## Invest Lab Feedback Loop (UX)
+
+PNG — Invest AI worker bars/signals/paper → InvestSim evidence → Robinhood MCP draft (not product UI):
+
+![Invest Lab Feedback Loop UX](./invest-lab-feedback-loop-system-design-ux.png)
+
+Used in:
+
+- [Invest Lab Feedback Loop (EN)](../articles/2026-08-05-invest-lab-feedback-loop-invest-ai-sim-mcp.md)
+- [Invest Lab 反馈环 (中文)](../articles/2026-08-05-invest-lab-feedback-loop-invest-ai-sim-mcp.zh.md)
+- Cross-repo: invest-ai · invest-performance-sim · xingai-robinhood-mcp
+
+---
+
 ## Daily Investment Zhibao (UX)
 
 PNG — Invest AI worker pipeline for 每日投资智报 (not product UI):
