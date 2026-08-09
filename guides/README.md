@@ -10,6 +10,7 @@ Architecture deep dives stay under [`articles/`](../articles/). These guides tea
 
 | Date | Title | Audience | Tags |
 |------|-------|----------|------|
+| 2026-08-06 | [From Toy Demo to Enterprise AI Agent](2026-08-06-toy-demo-to-enterprise-agent.md) · [中文](2026-08-06-toy-demo-to-enterprise-agent.zh.md) | Engineers past first LLM calls; Agent resume / interview prep | `agent` `claims` `evaluation` `enterprise` `education` |
 | 2026-07-12 | [MCP Auth from Robinhood — OAuth 2.1 / PKCE / Token Verification](2026-07-12-mcp-oauth-auth-deep-dive.md) · [中文](2026-07-12-mcp-oauth-auth-deep-dive.zh.md) | Engineers new to MCP auth, platform & security | `mcp` `oauth` `pkce` `jwt` `education` |
 | 2026-07-12 | [Build an OAuth 2.1 + PKCE MCP Project from Scratch](2026-07-12-mcp-oauth-pkce-lab.md) · [中文](2026-07-12-mcp-oauth-pkce-lab.zh.md) | Engineers implementing a demo Auth + MCP stack | `mcp` `oauth` `fastapi` `hands-on` `education` |
 
