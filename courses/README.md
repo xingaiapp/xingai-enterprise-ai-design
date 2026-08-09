@@ -22,6 +22,7 @@ Chinese: [README.zh.md](README.zh.md)
 | 9 | [AI Interview Mastery](09-ai-interview-mastery/README.md) | Complete a calibrated **AI-role** interview loop | All levels |
 | 10 | [OAuth, OIDC, Azure Identity & API Security](10-oauth-oidc-azure-identity/README.md) | Secure OAuth/OIDC + two-wall MCP/API lab | Platform / security / senior AI |
 | Domain | [Claim Business for Solution Architects](claim-business/README.md) · [中文](claim-business/README.zh.md) | Explain Claim Lifecycle, TPA vs Carrier, Reserve/Payment, and design auditable claims platforms (illustrative TPA / Property–CTABS) | Solutions architects joining insurance claims programs |
+| Domain | [Claims Copilot Agent Engineering](claims-copilot-agent/README.md) · [中文](claims-copilot-agent/README.zh.md) | Design–secure–evaluate a Claims Copilot Agent (tools, MCP, HITL, OBO, golden eval) and defend it in interviews | AI / solutions engineers building claims copilots |
 
 ## Required Lesson Contract
 

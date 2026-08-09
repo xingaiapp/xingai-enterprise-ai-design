@@ -22,6 +22,7 @@ English: [README.md](README.md)
 | 9 | [AI 面试精通](09-ai-interview-mastery/README.zh.md) | 完成校准后的 **AI 岗位**面试循环 | 全级别 |
 | 10 | [OAuth、OIDC、Azure 身份与 API 安全](10-oauth-oidc-azure-identity/README.zh.md) | 完成受保护的 OAuth/OIDC + 双墙 MCP/API 实验 | 平台 / 安全 / 高级 AI |
 | 领域 | [面向架构师的理赔业务](claim-business/README.zh.md) · [EN](claim-business/README.md) | 讲清 Claim Lifecycle、TPA vs Carrier、Reserve/Payment，并设计可审计理赔平台（示意 TPA / Property–CTABS） | 进入保险理赔项目的解决方案架构师 |
+| 领域 | [Claims Copilot Agent 工程实战](claims-copilot-agent/README.zh.md) · [EN](claims-copilot-agent/README.md) | 设计—加固—评估 Claims Copilot Agent（工具、MCP、HITL、OBO、Golden Eval），并能面试答辩 | 做理赔 Copilot 的 AI / 解决方案工程师 |
 
 ## 强制课程契约
 
