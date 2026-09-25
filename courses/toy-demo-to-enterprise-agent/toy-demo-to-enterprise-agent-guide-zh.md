@@ -1,8 +1,8 @@
 # 从"玩具级 Demo"到"企业级 AI Agent"
 
-> 教育指南 · 2026-08-06 · [English](2026-08-06-toy-demo-to-enterprise-agent.md)
+> 教育指南 · 2026-08-06 · [English](toy-demo-to-enterprise-agent-guide-en.md)
 > 目标读者：能写出 LLM 调用、但还没做过生产 Agent 的工程师；正在准备 Agent 方向简历或面试的人
-> 全文以 **Claims Copilot（理赔助手）** 为贯穿案例。业务背景见 [理赔业务完整课程](../courses/claim-business/claim-business-guide-zh.md) · 相关：[Claims Copilot Agent 课程](../courses/claims-copilot-agent/claims-copilot-agent-guide-zh.md)
+> 全文以 **Claims Copilot（理赔助手）** 为贯穿案例。业务背景见 [理赔业务完整课程](../claim-business/claim-business-guide-zh.md) · 相关：[Claims Copilot Agent 课程](../claims-copilot-agent/claims-copilot-agent-guide-zh.md)
 
 ---
 
@@ -93,7 +93,7 @@ flowchart LR
 | 结果能否驱动下一步工作 | 用户还得自己再操作一遍 |
 | 失败/超时怎么办 | 直接报错，或者更糟：静默返回残缺结果 |
 
-> ⚠️ **最危险的不是"回答错误"，而是"回答看起来完全正确但缺了一条关键事实"。** 摘要漏掉"索赔人已聘请律师"这一条，理赔员据此直接拨打了索赔人电话——这在很多司法辖区是不允许的（见[理赔课程 Level 1](../courses/claim-business/claim-business-guide-zh.md)）。模型没有说错任何话，但系统造成了合规事故。
+> ⚠️ **最危险的不是"回答错误"，而是"回答看起来完全正确但缺了一条关键事实"。** 摘要漏掉"索赔人已聘请律师"这一条，理赔员据此直接拨打了索赔人电话——这在很多司法辖区是不允许的（见[理赔课程 Level 1](../claim-business/claim-business-guide-zh.md)）。模型没有说错任何话，但系统造成了合规事故。
 
 ## 2.2 企业级应用的闭环
 
@@ -723,7 +723,7 @@ Chatbot 接收输入、生成文本、结束。Agent 会**自主决定调用哪�
 
 三个理由，按重要性排序：
 
-1. **模型会出错，而写操作不可逆。** 一条错误的 Claim Note 会进入案卷，成为审计和诉讼时的证据（见[理赔课程 3.3](../courses/claim-business/claim-business-guide-zh.md)）；一笔错误付款需要追回。
+1. **模型会出错，而写操作不可逆。** 一条错误的 Claim Note 会进入案卷，成为审计和诉讼时的证据（见[理赔课程 3.3](../claim-business/claim-business-guide-zh.md)）；一笔错误付款需要追回。
 2. **合规要求。** 许多司法辖区要求对索赔人不利的决定（拒赔、减损）必须有人工复核。
 3. **它是 prompt injection 的最后一道防线。** 即使注入成功让模型生成了危险建议，人工批准环节仍能拦住它——这也是为什么"高风险动作人工批准"是安全设计而不只是产品设计。
 
@@ -894,12 +894,12 @@ expect:
 
 | 主题 | 位置 |
 |---|---|
-| 理赔业务基础（本课案例的领域背景） | [理赔业务完整课程](../courses/claim-business/claim-business-guide-zh.md) |
-| Claims Copilot Agent 课程 | [Claims Copilot Agent 指南](../courses/claims-copilot-agent/claims-copilot-agent-guide-zh.md) |
-| MCP 的 OAuth / PKCE / Token 校验 | [MCP Auth 深度解析](2026-07-12-mcp-oauth-auth-deep-dive.zh.md) |
-| 动手搭建 OAuth 2.1 + PKCE 的 MCP 项目 | [PKCE 实验课](2026-07-12-mcp-oauth-pkce-lab.zh.md) |
+| 理赔业务基础（本课案例的领域背景） | [理赔业务完整课程](../claim-business/claim-business-guide-zh.md) |
+| Claims Copilot Agent 课程 | [Claims Copilot Agent 指南](../claims-copilot-agent/claims-copilot-agent-guide-zh.md) |
+| MCP 的 OAuth / PKCE / Token 校验 | [MCP Auth 深度解析](../../guides/2026-07-12-mcp-oauth-auth-deep-dive.zh.md) |
+| 动手搭建 OAuth 2.1 + PKCE 的 MCP 项目 | [PKCE 实验课](../../guides/2026-07-12-mcp-oauth-pkce-lab.zh.md) |
 | 可复现的门禁分母（本课 5.4 的工程实现） | `xingai-evidence-engine` ADR-004 |
 
 ## 免责声明
 
-本文为教育性内容，讲解通用工程实践。文中的架构图、API、工具名、指标目标均为**示意性设计**（illustrative design），不代表任何实际系统。理赔业务示例遵循[理赔课程](../courses/claim-business/claim-business-guide-zh.md)的准确性边界：真实流程取决于 Client Instructions、Service Agreement、保单条款、司法辖区与授权范围。不构成法律、合规或投资建议。
+本文为教育性内容，讲解通用工程实践。文中的架构图、API、工具名、指标目标均为**示意性设计**（illustrative design），不代表任何实际系统。理赔业务示例遵循[理赔课程](../claim-business/claim-business-guide-zh.md)的准确性边界：真实流程取决于 Client Instructions、Service Agreement、保单条款、司法辖区与授权范围。不构成法律、合规或投资建议。

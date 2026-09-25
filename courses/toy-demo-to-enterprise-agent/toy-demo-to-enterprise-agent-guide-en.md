@@ -7,9 +7,9 @@ description: Education guide that takes an LLM toy demo to a production Agent �
 
 # From Toy Demo to Enterprise AI Agent
 
-> Education guide · 2026-08-06 · [中文](2026-08-06-toy-demo-to-enterprise-agent.zh.md)
+> Education guide · 2026-08-06 · [中文](toy-demo-to-enterprise-agent-guide-zh.md)
 > Audience: engineers who can call an LLM but have not shipped a production Agent; people preparing Agent-focused resumes or interviews
-> This guide uses **Claims Copilot** as the spine case. Business background: [Claim Business full course](../courses/claim-business/claim-business-guide-en.md) · Related: [Claims Copilot Agent course](../courses/claims-copilot-agent/claims-copilot-agent-guide-en.md)
+> This guide uses **Claims Copilot** as the spine case. Business background: [Claim Business full course](../claim-business/claim-business-guide-en.md) · Related: [Claims Copilot Agent course](../claims-copilot-agent/claims-copilot-agent-guide-en.md)
 
 ---
 
@@ -100,7 +100,7 @@ The model generates a summary, the page shows the answer, and the flow ends.
 | Whether the result can drive the next work step | The user still has to operate again by hand |
 | What to do on failure / timeout | Hard error — or worse, silent partial results |
 
-> ⚠️ **The most dangerous failure is not "wrong answer," but "answer that looks completely correct while missing one critical fact."** If the summary omits "claimant has retained counsel," the Adjuster calls the claimant directly — which is not allowed in many jurisdictions (see [Claim Business course Level 1](../courses/claim-business/claim-business-guide-en.md)). The model did not say anything false. The system still caused a compliance incident.
+> ⚠️ **The most dangerous failure is not "wrong answer," but "answer that looks completely correct while missing one critical fact."** If the summary omits "claimant has retained counsel," the Adjuster calls the claimant directly — which is not allowed in many jurisdictions (see [Claim Business course Level 1](../claim-business/claim-business-guide-en.md)). The model did not say anything false. The system still caused a compliance incident.
 
 ## 2.2 Enterprise Closed Loop
 
@@ -731,7 +731,7 @@ Any of the other nine missing blocks shipping: no authz check → over-privilege
 
 Three reasons, ordered by importance:
 
-1. **Models err, and write actions are irreversible.** A wrong Claim Note enters the claim file and becomes evidence in audit and litigation (see [Claim Business course 3.3](../courses/claim-business/claim-business-guide-en.md)); a wrong payment must be clawed back.
+1. **Models err, and write actions are irreversible.** A wrong Claim Note enters the claim file and becomes evidence in audit and litigation (see [Claim Business course 3.3](../claim-business/claim-business-guide-en.md)); a wrong payment must be clawed back.
 2. **Compliance.** Many jurisdictions require human review for decisions adverse to the claimant (denials, reductions).
 3. **It is the last line of defense against prompt injection.** Even if injection succeeds and the model invents a dangerous recommendation, human approval still stops it — which is why "high-risk actions need human approval" is a security design, not only a product design.
 
@@ -903,12 +903,12 @@ If you remember one sentence, remember this:
 
 | Topic | Where |
 |---|---|
-| Claim business foundations (domain background for this lesson's case) | [Claim Business full course](../courses/claim-business/claim-business-guide-en.md) |
-| Claims Copilot Agent course | [Claims Copilot Agent guide](../courses/claims-copilot-agent/claims-copilot-agent-guide-en.md) |
-| MCP OAuth / PKCE / token verification | [MCP Auth Deep Dive](2026-07-12-mcp-oauth-auth-deep-dive.md) |
-| Hands-on OAuth 2.1 + PKCE MCP project | [PKCE lab](2026-07-12-mcp-oauth-pkce-lab.md) |
+| Claim business foundations (domain background for this lesson's case) | [Claim Business full course](../claim-business/claim-business-guide-en.md) |
+| Claims Copilot Agent course | [Claims Copilot Agent guide](../claims-copilot-agent/claims-copilot-agent-guide-en.md) |
+| MCP OAuth / PKCE / token verification | [MCP Auth Deep Dive](../../guides/2026-07-12-mcp-oauth-auth-deep-dive.md) |
+| Hands-on OAuth 2.1 + PKCE MCP project | [PKCE lab](../../guides/2026-07-12-mcp-oauth-pkce-lab.md) |
 | Reproducible gate denominators (engineering realization of section 5.4) | `xingai-evidence-engine` ADR-004 |
 
 ## Disclaimer
 
-This document is educational content on general engineering practice. Architecture diagrams, APIs, tool names, and metric targets are **illustrative design**, not representations of any production system. Claims examples follow the accuracy boundaries of the [Claim Business course](../courses/claim-business/claim-business-guide-en.md): real process depends on Client Instructions, Service Agreement, policy terms, jurisdiction, and authorization scope. Not legal, compliance, or investment advice.
+This document is educational content on general engineering practice. Architecture diagrams, APIs, tool names, and metric targets are **illustrative design**, not representations of any production system. Claims examples follow the accuracy boundaries of the [Claim Business course](../claim-business/claim-business-guide-en.md): real process depends on Client Instructions, Service Agreement, policy terms, jurisdiction, and authorization scope. Not legal, compliance, or investment advice.
