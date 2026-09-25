@@ -2,6 +2,62 @@
 
 这个文件包含了文章中所有核心概念的高分辨率架构图表。
 
+## Claims Copilot Agent Phased Roadmap (UX)
+
+PNG — Adjuster → Agent API → Orchestrator → MCP tools → HITL / eval (not product UI):
+
+![Claims Copilot Agent Phased Roadmap UX](./claims-copilot-agent-phased-roadmap-system-design-ux.png)
+
+Used in:
+
+- [Claims Copilot Agent Phased Roadmap (EN)](../articles/2026-09-25-claims-copilot-agent-phased-roadmap.md)
+- [Claims Copilot Agent 分阶段系统设计 (中文)](../articles/2026-09-25-claims-copilot-agent-phased-roadmap.zh.md)
+- Mirror: [docs/architecture/claims-copilot-agent.md](../docs/architecture/claims-copilot-agent.md)
+
+---
+
+## Golden Pit Opportunity Radar Phased Roadmap (UX)
+
+PNG — Worker deterministic score → cache → read-only API → FE / reports (not product UI):
+
+![Golden Pit Phased Roadmap UX](./golden-pit-opportunity-radar-phased-roadmap-system-design-ux.png)
+
+Used in:
+
+- [Golden Pit Phased Roadmap (EN)](../articles/2026-09-25-golden-pit-opportunity-radar-phased-roadmap.md)
+- [黄金坑分阶段系统设计 (中文)](../articles/2026-09-25-golden-pit-opportunity-radar-phased-roadmap.zh.md)
+- Cross-repo: xingai-invest-ai `docs/architecture/golden-pit-opportunity-radar.md`
+
+---
+
+## Agent Firewall Phased Roadmap (UX)
+
+PNG — Hooks → policy → risk → approval → ledger (not product UI):
+
+![Agent Firewall Phased Roadmap UX](./agent-firewall-phased-roadmap-system-design-ux.png)
+
+Used in:
+
+- [Agent Firewall Phased Roadmap (EN)](../articles/2026-09-25-agent-firewall-phased-roadmap.md)
+- [Agent Firewall 分阶段系统设计 (中文)](../articles/2026-09-25-agent-firewall-phased-roadmap.zh.md)
+- Cross-repo: xingai-agent-firewall `docs/architecture/`
+
+---
+
+## XNP Phase 3+ Next Phased Roadmap (UX)
+
+PNG — Phase 2 empty boot → Phase 3 identity/consent → Phase 4+ channel slice (not product UI):
+
+![XNP Phase 3+ Phased Roadmap UX](./xnp-phase-3-next-phased-roadmap-system-design-ux.png)
+
+Used in:
+
+- [XNP Phase 3+ Next (EN)](../articles/2026-09-25-xnp-phase-3-next-phased-roadmap.md)
+- [XNP Phase 3+ 下一阶段 (中文)](../articles/2026-09-25-xnp-phase-3-next-phased-roadmap.zh.md)
+- Cross-repo: xingai-notification-platform `docs/architecture/xnp-phase-3-next-phased-roadmap.md`
+
+---
+
 ## Invest Lab Feedback Loop (UX)
 
 PNG — Invest AI worker bars/signals/paper → InvestSim evidence → Robinhood MCP draft (not product UI):
